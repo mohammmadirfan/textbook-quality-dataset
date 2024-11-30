@@ -1,0 +1,2988 @@
+[
+    {
+        "task_id": "6",
+        "sympy_exp": "sin(z)*atan(y) - sin(z) - acos(y)",
+        "latex_exp": "\\sin{\\left(z \\right)} \\operatorname{atan}{\\left(y \\right)} - \\sin{\\left(z \\right)} - \\operatorname{acos}{\\left(y \\right)}",
+        "solution": "from numpy import sin\nfrom numpy import arccos\nfrom numpy import arctan\ndef _lambdifygenerated(x, y, z):\n    return sin(z)*arctan(y) - sin(z) - arccos(y)",
+        "simplified_solution": "sin(z)*atan(y) - sin(z) - acos(y)",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": 5.083312877261612,
+                    "y": -0.5276754377373805,
+                    "z": 5.446734727817965
+                },
+                "output": -1.023985700056103
+            },
+            {
+                "input": {
+                    "x": 7.2463490472504475,
+                    "y": 0.848099306167247,
+                    "z": 1.5046016375831677
+                },
+                "output": -0.8543695405624046
+            },
+            {
+                "input": {
+                    "x": 4.1570166014016525,
+                    "y": -0.7457288597113527,
+                    "z": 0.8432987271044201
+                },
+                "output": -3.6378125249366446
+            },
+            {
+                "input": {
+                    "x": 8.155549955309919,
+                    "y": -0.9628795287720064,
+                    "z": 4.576832316197105
+                },
+                "output": -1.1179869013512036
+            },
+            {
+                "input": {
+                    "x": 0.22327773425569397,
+                    "y": -0.026187875122627435,
+                    "z": 9.995079916363839
+                },
+                "output": -1.0429657125911613
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "trigonometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe input LaTeX expression:\n$\\\\sin{\\\\left(z \\\\right)} \\\\operatorname{atan}{\\\\left(y \\\\right)} - \\\\sin{\\\\left(z \\\\right)} - \\\\operatorname{acos}{\\\\left(y \\\\right)}$\n\nMaps to the following Python function:\n\n```python\ndef _lambdifygenerated(x, y, z):\n    return sin(z)*arctan(y) - sin(z) - arccos(y)\n```\n\n**PYTHON RULES**\n\n- The function takes three arguments: `x`, `y`, and `z`.\n- The function first calculates the sine of `z` and stores it in a variable.\n- Then, the function calculates the arctangent of `y` and stores it in a variable.\n- The function then subtracts the sine of `z` from the arctangent of `y` and stores the result in a variable.\n- Finally, the function calculates the arccosine of `y` and subtracts it from the result of the previous step.\n- The function returns the result of the previous step.\n\n**OUTPUT**\n\nThe output of the function is a float representing the result of the calculation."
+    },
+    {
+        "task_id": "10",
+        "sympy_exp": "pi*h*r**2 + l*w + 2*l + 2*pi*r + 2*w",
+        "latex_exp": "\\pi h r^{2} + l w + 2 l + 2 \\pi r + 2 w",
+        "solution": "import numpy as np\ndef _lambdifygenerated(l, w, h, r):\n    return np.pi*h*r**2 + l*w + 2*l + 2*np.pi*r + 2*w",
+        "simplified_solution": "pi*h*r**2 + l*w + 2*l + 2*pi*r + 2*w",
+        "synthetic": true,
+        "domain": "Mathematics_Geometry",
+        "test_cases": [
+            {
+                "input": {
+                    "l": 3.218001637121267,
+                    "w": 9.959114312410378,
+                    "h": 1.2484748129218932,
+                    "r": 6.192982253191145
+                },
+                "output": 247.7425574148636
+            },
+            {
+                "input": {
+                    "l": 8.483843552183504,
+                    "w": 8.561193786293531,
+                    "h": 7.732784553304876,
+                    "r": 4.119879868043462
+                },
+                "output": 544.9473228170292
+            },
+            {
+                "input": {
+                    "l": 5.154906056702804,
+                    "w": 7.112206095284126,
+                    "h": 7.109431105373642,
+                    "r": 7.980742007212544
+                },
+                "output": 1533.9036641573225
+            },
+            {
+                "input": {
+                    "l": 2.17300605729151,
+                    "w": 7.15258220044679,
+                    "h": 5.777811297578675,
+                    "r": 1.2727689388289734
+                },
+                "output": 71.59522680563254
+            },
+            {
+                "input": {
+                    "l": 9.71842660688081,
+                    "w": 5.335660773302171,
+                    "h": 4.298173387230925,
+                    "r": 8.923449362003698
+                },
+                "output": 1213.2550311925597
+            }
+        ],
+        "complexity": "3",
+        "equation_type": "geometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nEach term in the latex expression is mapped to its corresponding Python function or operator. For example:\n\n- `\\\\pi` maps to `np.pi`\n- `h` maps to `h`\n- `r` maps to `r`\n- `l` maps to `l`\n- `w` maps to `w`\n- `^` (exponent) maps to `**`\n- `+` (addition) maps to `+`\n\n**PYTHON RULES**\n\n- The function takes four arguments: `l`, `w`, `h`, and `r`.\n- The function calculates the surface area of a cylinder using the formula: `2\u03c0rh + 2\u03c0r\u00b2 + lw + 2l + 2w`.\n- The function returns the surface area of the cylinder.\n\n**OUTPUT**\n\nThe function returns a float representing the surface area of the cylinder."
+    },
+    {
+        "task_id": "2",
+        "sympy_exp": "l**2 + 2*l + 1.33333333333333*pi*r**3 + 2*pi*r*(h + r) + 2*w",
+        "latex_exp": "l^{2} + 2 l + 1.33333333333333 \\pi r^{3} + 2 \\pi r \\left(h + r\\right) + 2 w",
+        "solution": "import numpy as np\ndef _lambdifygenerated(l, w, h, r):\n    return l**2 + 2*l + 1.33333333333333*np.pi*r**3 + 2*np.pi*r*(h + r) + 2*w",
+        "simplified_solution": "l**2 + 2*l + 1.33333333333333*pi*r**3 + 2*pi*r*(h + r) + 2*w",
+        "synthetic": true,
+        "domain": "Mathematics_Geometry",
+        "test_cases": [
+            {
+                "input": {
+                    "l": 9.19160082515118,
+                    "w": 2.284476799371712,
+                    "h": 5.319978332112257,
+                    "r": 7.843854499968989
+                },
+                "output": 2777.7252329217995
+            },
+            {
+                "input": {
+                    "l": 1.3421863988552771,
+                    "w": 1.8746564182463001,
+                    "h": 5.484327557175129,
+                    "r": 8.412455516115314
+                },
+                "output": 3236.5508372552545
+            },
+            {
+                "input": {
+                    "l": 9.473650515263488,
+                    "w": 3.877911207021773,
+                    "h": 3.150960842056697,
+                    "r": 2.3055774096941493
+                },
+                "output": 246.8352848229758
+            },
+            {
+                "input": {
+                    "l": 5.135685328759213,
+                    "w": 2.9779907491140696,
+                    "h": 7.4025322990430364,
+                    "r": 8.38585163429973
+                },
+                "output": 3344.6790623756115
+            },
+            {
+                "input": {
+                    "l": 3.016674713600281,
+                    "w": 1.4976497533333217,
+                    "h": 2.555815329336051,
+                    "r": 9.302670878284506
+                },
+                "output": 4083.4487382407524
+            }
+        ],
+        "complexity": "3",
+        "equation_type": "geometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\nThe given input is a LaTeX expression that represents a mathematical function. The LLM model will learn to map this LaTeX expression to a Python function. The mapping rules are as follows:\n\n- Variables in the LaTeX expression are represented by positional arguments in the Python function.\n- Mathematical operators in the LaTeX expression are represented by their corresponding Python operators.\n- Functions in the LaTeX expression are represented by their corresponding Python functions.\n\n**PYTHON RULES**\nThe Python function takes the following arguments:\n\n- `l`: A numerical value representing the length of a side of a rectangular prism.\n- `w`: A numerical value representing the width of a rectangular prism.\n- `h`: A numerical value representing the height of a rectangular prism.\n- `r`: A numerical value representing the radius of a cylinder.\n\nThe function calculates the volume of a rectangular prism and a cylinder and adds them together. The calculations are done in the following order:\n\n1. Calculate the volume of the rectangular prism: `volume_prism = l * w * h`\n2. Calculate the volume of the cylinder: `volume_cylinder = 1.33333333333333 * np.pi * r ** 3`\n3. Calculate the total volume: `total_volume = volume_prism + volume_cylinder`\n\nThe output of the function is a numerical value representing the total volume of the two shapes."
+    },
+    {
+        "task_id": "4",
+        "sympy_exp": "1.33333333333333*pi*h*r**2 + 2*l + 2*w",
+        "latex_exp": "1.33333333333333 \\pi h r^{2} + 2 l + 2 w",
+        "solution": "import numpy as np\ndef _lambdifygenerated(l, w, h, r):\n    return 1.33333333333333*np.pi*h*r**2 + 2*l + 2*w",
+        "simplified_solution": "1.33333333333333*pi*h*r**2 + 2*l + 2*w",
+        "synthetic": true,
+        "domain": "Mathematics_Geometry",
+        "test_cases": [
+            {
+                "input": {
+                    "l": 3.905594610756853,
+                    "w": 4.8037182433847505,
+                    "h": 3.8368637496532627,
+                    "r": 1.7937954816060635
+                },
+                "output": 69.1329480450431
+            },
+            {
+                "input": {
+                    "l": 5.236300588716669,
+                    "w": 2.2924276003804316,
+                    "h": 9.531469804316197,
+                    "r": 2.473185171037365
+                },
+                "output": 259.2665059263295
+            },
+            {
+                "input": {
+                    "l": 6.981501691292677,
+                    "w": 1.504374445974832,
+                    "h": 7.713972384118592,
+                    "r": 8.626221855386255
+                },
+                "output": 2421.378488210305
+            },
+            {
+                "input": {
+                    "l": 9.177111483390775,
+                    "w": 3.5368532101223997,
+                    "h": 3.7247694956967417,
+                    "r": 3.686209152493605
+                },
+                "output": 237.43383436372085
+            },
+            {
+                "input": {
+                    "l": 6.2537855269766425,
+                    "w": 3.9887432864364305,
+                    "h": 2.546910858528954,
+                    "r": 3.7366522314186437
+                },
+                "output": 169.44438910920425
+            }
+        ],
+        "complexity": "3",
+        "equation_type": "geometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n- The latex expression is mapped to the python function _lambdifygenerated.\n- The python function _lambdifygenerated takes the following arguments: l, w, h, r.\n- The python function _lambdifygenerated calculates the following expression: 1.33333333333333*np.pi*h*r**2 + 2*l + 2*w.\n- The output of the python function _lambdifygenerated is a single value.\n\n**PYTHON RULES**\n- The python function _lambdifygenerated is defined using the def keyword.\n- The python function _lambdifygenerated takes four arguments: l, w, h, r.\n- The python function _lambdifygenerated calculates the following expression: 1.33333333333333*np.pi*h*r**2 + 2*l + 2*w.\n- The python function _lambdifygenerated uses the following python functions and operators: *, +, **, np.pi.\n- The output of the python function _lambdifygenerated is a single value."
+    },
+    {
+        "task_id": "1",
+        "sympy_exp": "l*w + 2*l + pi*r**2 + 2*w",
+        "latex_exp": "l w + 2 l + \\pi r^{2} + 2 w",
+        "solution": "import numpy as np\ndef _lambdifygenerated(l, w, r):\n    return l*w + 2*l + np.pi*r**2 + 2*w",
+        "simplified_solution": "l*w + 2*l + pi*r**2 + 2*w",
+        "synthetic": true,
+        "domain": "Mathematics_Geometry",
+        "test_cases": [
+            {
+                "input": {
+                    "l": 4.675607273403109,
+                    "w": 8.796294988991455,
+                    "r": 6.215522517362395
+                },
+                "output": 189.44009520922367
+            },
+            {
+                "input": {
+                    "l": 8.664252281854203,
+                    "w": 7.903237024507047,
+                    "r": 6.271764040730452
+                },
+                "output": 225.185241037174
+            },
+            {
+                "input": {
+                    "l": 2.0547744760378968,
+                    "w": 1.3155360870386619,
+                    "r": 7.730362455779387
+                },
+                "output": 197.18062730639363
+            },
+            {
+                "input": {
+                    "l": 7.194656033797808,
+                    "w": 4.026810560655529,
+                    "r": 6.204515016776552
+                },
+                "output": 172.35322159247545
+            },
+            {
+                "input": {
+                    "l": 9.903284929155022,
+                    "w": 9.564158814970375,
+                    "r": 6.166356889023079
+                },
+                "output": 253.10726220065612
+            }
+        ],
+        "complexity": "3",
+        "equation_type": "geometric",
+        "output_type": "real",
+        "description": "## LATEX TO PYTHON MAPPING\nThe input LaTeX expression \" l w + 2 l + \\\\pi r^{2} + 2 w \" is mapped to the Python function `_lambdifygenerated` that takes three arguments: `l`, `w`, and `r`.\n## PYTHON RULES\n\n### Function Takes\nThe function takes three arguments:\n- `l`: The length of the rectangle.\n- `w`: The width of the rectangle.\n- `r`: The radius of the circle.\n\n### Calculation\nThe function calculates the area of the rectangle and the area of the circle, and then adds the two areas together.\n\n### Python Functions and Operators Used\nThe following Python functions and operators are used in the function:\n- `np.pi`: The value of pi.\n- `**`: The exponentiation operator.\n- `+`: The addition operator.\n\n### Output\nThe function returns the total area of the rectangle and the circle."
+    },
+    {
+        "task_id": "6",
+        "sympy_exp": "10*x0 + 2*x1 + 17*x2 + 10*x3 + 12*x4 + 19*x5 + 9*x6",
+        "latex_exp": "10 x_{0} + 2 x_{1} + 17 x_{2} + 10 x_{3} + 12 x_{4} + 19 x_{5} + 9 x_{6}",
+        "solution": "def _lambdifygenerated(x0, x1, x2, x3, x4, x5, x6):\n    return 10*x0 + 2*x1 + 17*x2 + 10*x3 + 12*x4 + 19*x5 + 9*x6",
+        "simplified_solution": "10*x0 + 2*x1 + 17*x2 + 10*x3 + 12*x4 + 19*x5 + 9*x6",
+        "synthetic": true,
+        "domain": "Mathematics_Summation",
+        "coefficients": [
+            10,
+            2,
+            17,
+            10,
+            12,
+            19,
+            9
+        ],
+        "test_cases": [
+            {
+                "input": {
+                    "x0": -1,
+                    "x1": -2,
+                    "x2": 1,
+                    "x3": 2,
+                    "x4": 8,
+                    "x5": -2,
+                    "x6": -1
+                },
+                "output": 72
+            },
+            {
+                "input": {
+                    "x0": -6,
+                    "x1": 6,
+                    "x2": 4,
+                    "x3": 8,
+                    "x4": 8,
+                    "x5": 6,
+                    "x6": 2
+                },
+                "output": 328
+            },
+            {
+                "input": {
+                    "x0": 1,
+                    "x1": 5,
+                    "x2": 5,
+                    "x3": 4,
+                    "x4": -6,
+                    "x5": 10,
+                    "x6": 8
+                },
+                "output": 335
+            },
+            {
+                "input": {
+                    "x0": -4,
+                    "x1": -3,
+                    "x2": -1,
+                    "x3": -2,
+                    "x4": -10,
+                    "x5": -10,
+                    "x6": -10
+                },
+                "output": -483
+            },
+            {
+                "input": {
+                    "x0": 9,
+                    "x1": -10,
+                    "x2": -3,
+                    "x3": -10,
+                    "x4": -8,
+                    "x5": 9,
+                    "x6": -1
+                },
+                "output": -15
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "summation",
+        "output_type": "real",
+        "description": "## LATEX TO PYTHON MAPPING\nThe given latex expression:\n```\n10 x_{0} + 2 x_{1} + 17 x_{2} + 10 x_{3} + 12 x_{4} + 19 x_{5} + 9 x_{6}\n```\nmaps to the following python function:\n```\ndef _lambdifygenerated(x0, x1, x2, x3, x4, x5, x6):\n    return 10*x0 + 2*x1 + 17*x2 + 10*x3 + 12*x4 + 19*x5 + 9*x6\n```\n\n## PYTHON RULES\n- The function takes 7 arguments corresponding to the 7 variables in the latex expression.\n- The calculation is done by multiplying each variable by its respective coefficient and then adding all the products together.\n- The python operators used are: +, *\n\n## PYTHON FUNCTION\n```\ndef _lambdifygenerated(x0, x1, x2, x3, x4, x5, x6):\n    return 10*x0 + 2*x1 + 17*x2 + 10*x3 + 12*x4 + 19*x5 + 9*x6\n```\n\n## OUTPUT\nThe output of the function is a single number that is the result of the calculation."
+    },
+    {
+        "task_id": "9",
+        "sympy_exp": "pi*h*r**2 + 2*l + 2*pi*r*(h + r) + pi*r*(r + sqrt(h**2 + r**2)) + 2*w",
+        "latex_exp": "\\pi h r^{2} + 2 l + 2 \\pi r \\left(h + r\\right) + \\pi r \\left(r + \\sqrt{h^{2} + r^{2}}\\right) + 2 w",
+        "solution": "import numpy as np\ndef _lambdifygenerated(l, w, h, r):\n    return np.pi*h*r**2 + 2*l + 2*np.pi*r*(h + r) + np.pi*r*(r + np.sqrt(h**2 + r**2)) + 2*w",
+        "simplified_solution": "pi*h*r**2 + 2*l + 2*pi*r*(h + r) + pi*r*(r + sqrt(h**2 + r**2)) + 2*w",
+        "synthetic": true,
+        "domain": "Mathematics_Geometry",
+        "test_cases": [
+            {
+                "input": {
+                    "l": 4.766065393012481,
+                    "w": 3.6948421939973803,
+                    "h": 3.3910785719463497,
+                    "r": 6.666885411064319
+                },
+                "output": 1208.053933092906
+            },
+            {
+                "input": {
+                    "l": 9.849646448447512,
+                    "w": 1.9140546976992165,
+                    "h": 9.164275833696236,
+                    "r": 6.8660345362279775
+                },
+                "output": 2467.439084266928
+            },
+            {
+                "input": {
+                    "l": 6.519680685886324,
+                    "w": 5.0648298537197975,
+                    "h": 7.874642253063653,
+                    "r": 2.844108549164866
+                },
+                "output": 515.0465501300051
+            },
+            {
+                "input": {
+                    "l": 7.969430742614706,
+                    "w": 5.66905622375093,
+                    "h": 2.611403334665014,
+                    "r": 8.75281623881859
+                },
+                "output": 1772.6288645514633
+            },
+            {
+                "input": {
+                    "l": 4.787967749534705,
+                    "w": 1.3760493779748322,
+                    "h": 8.940255570869478,
+                    "r": 1.4675662074150615
+                },
+                "output": 217.32694515017323
+            }
+        ],
+        "complexity": "3",
+        "equation_type": "geometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe latex expression \\( \\pi h r^{2} + 2 l + 2 \\pi r \\left(h + r\\right) + \\pi r \\left(r + \\sqrt{h^{2} + r^{2}}\\right) + 2 w \\) can be simplified as below:\n\n- `pi` is translated to `np.pi`\n- `r` is translated to `r`\n- `h` is translated to `h`\n- `l` is translated to `l`\n- `w` is translated to `w`\n- `r^2` is translated to `r**2`\n- `\\sqrt{h^2 + r^2}` is translated to `np.sqrt(h**2 + r**2)`\n- `2\\pi r(h+r)` is translated to `2*np.pi*r*(h + r)`\n\n**PYTHON RULES**\n\n- The function takes four arguments: `l`, `w`, `h`, `r`\n- The function returns the value of the latex expression\n- The function uses the following python functions and operators:\n    - `np.pi`: This function returns the value of pi.\n    - `r`: This variable represents the radius of the cylinder.\n    - `h`: This variable represents the height of the cylinder.\n    - `l`: This variable represents the length of the rectangular prism.\n    - `w`: This variable represents the width of the rectangular prism.\n    - `+`: This operator is used to add two numbers.\n    - `*`: This operator is used to multiply two numbers.\n    - `**`: This operator is used to raise a number to a power.\n    - `np.sqrt()`: This function returns the square root of a number.\n\n**OUTPUT**\n\nThe output of the function is a numerical value that represents the volume of the cylinder plus the volume of the rectangular prism."
+    },
+    {
+        "task_id": "8",
+        "sympy_exp": "-sin(y) + sin(z) - atan(x)",
+        "latex_exp": "- \\sin{\\left(y \\right)} + \\sin{\\left(z \\right)} - \\operatorname{atan}{\\left(x \\right)}",
+        "solution": "from numpy import sin\nfrom numpy import arctan\ndef _lambdifygenerated(x, y, z):\n    return -sin(y) + sin(z) - arctan(x)",
+        "simplified_solution": "-sin(y) + sin(z) - atan(x)",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": -4.379709166939287,
+                    "y": -0.9263060404726369,
+                    "z": 4.905856120108433
+                },
+                "output": 1.1643813020800975
+            },
+            {
+                "input": {
+                    "x": 3.587117055238835,
+                    "y": 0.7497399611652749,
+                    "z": 1.3987880279146854
+                },
+                "output": -0.9951290121313061
+            },
+            {
+                "input": {
+                    "x": 7.07841089998249,
+                    "y": 0.036169726759593956,
+                    "z": -7.368099214087711
+                },
+                "output": -2.3508755146948714
+            },
+            {
+                "input": {
+                    "x": 4.549640511529599,
+                    "y": -0.42486442368351107,
+                    "z": 0.26249391630464913
+                },
+                "output": -0.6827519914677874
+            },
+            {
+                "input": {
+                    "x": -2.745764565980502,
+                    "y": 0.7916242260141437,
+                    "z": -2.7429326396058613
+                },
+                "output": 0.12185067723695142
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "trigonometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe LaTeX expression is:- sin(y) + sin(z) - atan(x)\n\nThe Python code below is the equivalent of that equation.\n\n**PYTHON RULES**\n\n**Function name:** _lambdifygenerated\n\n**Function takes:**\n\n- x: The first input variable.\n- y: The second input variable.\n- z: The third input variable.\n\n**Calculation:**\n\n1. Calculate the sine of y using the sin() function from the numpy library.\n2. Calculate the sine of z using the sin() function from the numpy library.\n3. Calculate the arctangent of x using the arctan() function from the numpy library.\n4. Subtract the arctangent of x from the sum of the sine of y and the sine of z.\n\n**Output:**\n\nThe function returns the result of the calculation."
+    },
+    {
+        "task_id": "2",
+        "sympy_exp": "13*x + 8*y - 48",
+        "latex_exp": "13 x + 8 y - 48 = 0",
+        "solution": "def _lambdifygenerated(x, y):\n    return 13*x + 8*y - 48",
+        "simplified_solution": "13*x + 8*y - 48",
+        "synthetic": true,
+        "domain": "Mathematics_Diophantine",
+        "coefficients": {
+            "a": 13,
+            "b": 8,
+            "c": 48
+        },
+        "test_cases": [
+            {
+                "input": {
+                    "x": -10,
+                    "y": -1
+                },
+                "output": -186
+            },
+            {
+                "input": {
+                    "x": -9,
+                    "y": -2
+                },
+                "output": -181
+            },
+            {
+                "input": {
+                    "x": -9,
+                    "y": -2
+                },
+                "output": -181
+            },
+            {
+                "input": {
+                    "x": -5,
+                    "y": 10
+                },
+                "output": -33
+            },
+            {
+                "input": {
+                    "x": -8,
+                    "y": -8
+                },
+                "output": -216
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "linear_diophantine",
+        "output_type": "integer",
+        "description": "### LATEX TO PYTHON MAPPING\nThe LaTeX expression provided, \"13 x + 8 y - 48 = 0\", is a linear equation in two variables, x and y. The corresponding Python function, \"_lambdifygenerated\", takes two arguments, x and y, and returns the value of the expression.\n\n### PYTHON RULES\n\n**Function Signature**\n\nThe Python function takes two arguments:\n- `x`: A numerical value representing the value of the variable x.\n- `y`: A numerical value representing the value of the variable y.\n\n**Calculation**\n\nThe calculation is performed as follows:\n1. The value of `x` is multiplied by 13.\n2. The value of `y` is multiplied by 8.\n3. The results of steps 1 and 2 are added together.\n4. The value of 48 is subtracted from the result of step 3.\n\n**Output**\n\nThe output of the function is a numerical value representing the value of the expression \"13 x + 8 y - 48\"."
+    },
+    {
+        "task_id": "4",
+        "sympy_exp": "sin(z) + cos(z)",
+        "latex_exp": "\\sin{\\left(z \\right)} + \\cos{\\left(z \\right)}",
+        "solution": "from numpy import sin\nfrom numpy import cos\ndef _lambdifygenerated(x, y, z):\n    return sin(z) + cos(z)",
+        "simplified_solution": "sin(z) + cos(z)",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": -0.17037528420775772,
+                    "y": 0.23084489602715808,
+                    "z": -2.5920413766433743
+                },
+                "output": -1.3750636069466977
+            },
+            {
+                "input": {
+                    "x": -1.809671614475528,
+                    "y": 0.10714992941321033,
+                    "z": -5.283058789095998
+                },
+                "output": 1.3817351763331396
+            },
+            {
+                "input": {
+                    "x": 5.182095861993243,
+                    "y": -0.40944093391592395,
+                    "z": -6.109607925846001
+                },
+                "output": 1.1576803033684373
+            },
+            {
+                "input": {
+                    "x": -8.47891138768136,
+                    "y": 0.4752226544385949,
+                    "z": 8.476112957331448
+                },
+                "output": 0.2298697575530727
+            },
+            {
+                "input": {
+                    "x": 3.336449794909784,
+                    "y": -0.04401180454758569,
+                    "z": -4.006517772253533
+                },
+                "output": 0.11234958476062684
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "trigonometric",
+        "output_type": "real",
+        "description": "### LATEX TO PYTHON MAPPING.\n- The input `\\sin{\\\\left(z \\\\right)} + \\cos{\\\\left(z \\\\right)}` maps to the python function `sin(z) + cos(z)`.\n\n### PYTHON RULES.\n- The function takes one argument: `z`.\n- It uses the python functions `sin` and `cos` to calculate the sine and cosine of `z`, respectively.\n- It returns the sum of the sine and cosine of `z`.\n\n### Output of the function\n- The output of the function is a numpy array containing the sum of the sine and cosine of each element of the input array."
+    },
+    {
+        "task_id": "5",
+        "sympy_exp": "l*w + 2*pi*r*(h + r) + 2*pi*r",
+        "latex_exp": "l w + 2 \\pi r \\left(h + r\\right) + 2 \\pi r",
+        "solution": "import numpy as np\ndef _lambdifygenerated(l, w, h, r):\n    return l*w + 2*np.pi*r*(h + r) + 2*np.pi*r",
+        "simplified_solution": "l*w + 2*pi*r*(h + r) + 2*pi*r",
+        "synthetic": true,
+        "domain": "Mathematics_Geometry",
+        "test_cases": [
+            {
+                "input": {
+                    "l": 1.4451965556092923,
+                    "w": 5.392964195526759,
+                    "h": 6.809755343016782,
+                    "r": 4.577528155481658
+                },
+                "output": 364.0702230170778
+            },
+            {
+                "input": {
+                    "l": 9.047125434525585,
+                    "w": 6.848350039754702,
+                    "h": 6.791707457341188,
+                    "r": 7.577986083905966
+                },
+                "output": 793.7687920452917
+            },
+            {
+                "input": {
+                    "l": 3.1409662244051284,
+                    "w": 6.7775221024686525,
+                    "h": 4.0251739481467474,
+                    "r": 2.5905705661908067
+                },
+                "output": 145.24970740079868
+            },
+            {
+                "input": {
+                    "l": 6.383633650593304,
+                    "w": 2.9304270928682574,
+                    "h": 7.5376418381545225,
+                    "r": 6.5862104071154945
+                },
+                "output": 644.5677806349513
+            },
+            {
+                "input": {
+                    "l": 6.703775461618936,
+                    "w": 5.397600359348346,
+                    "h": 5.738477073160104,
+                    "r": 6.729236041534886
+                },
+                "output": 605.6131776812881
+            }
+        ],
+        "complexity": "3",
+        "equation_type": "geometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe given LaTeX expression is:\n\n```\nl w + 2 \\pi r \\left(h + r\\right) + 2 \\pi r\n```\n\nThis expression is mapped to the following Python function:\n\n```python\ndef _lambdifygenerated(l, w, h, r):\n    return l*w + 2*np.pi*r*(h + r) + 2*np.pi*r\n```\n\n**PYTHON RULES**\n\nThe Python function takes the following arguments:\n\n* `l`: The length of the rectangle in meters.\n* `w`: The width of the rectangle in meters.\n* `h`: The height of the cylinder in meters.\n* `r`: The radius of the cylinder in meters.\n\nThe function calculates the surface area of a cuboid with length `l` and width `w`, and two circular surfaces with radius `r`. The calculation is done as follows:\n\n1. The area of the rectangle is calculated as `l*w`.\n2. The area of the two circular surfaces is calculated as `2*pi*r*(h + r)`.\n3. The total surface area is calculated as the sum of the rectangle area and the two circular surface areas: `l*w + 2*pi*r*(h + r) + 2*pi*r`.\n\nThe output of the function is the total surface area in square meters."
+    },
+    {
+        "task_id": "4",
+        "sympy_exp": "-x**3 + x*y**5 + z**3",
+        "latex_exp": "- x^{3} + x y^{5} + z^{3}",
+        "solution": "def _lambdifygenerated(x, y, z):\n    return -x**3 + x*y**5 + z**3",
+        "simplified_solution": "-x**3 + x*y**5 + z**3",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": -1.209113692120475,
+                    "y": 0.7551308975121334,
+                    "z": 2.5307572865958683
+                },
+                "output": 17.679615998108037
+            },
+            {
+                "input": {
+                    "x": -1.5920520268765763,
+                    "y": -7.723358373010862,
+                    "z": 4.024656161618591
+                },
+                "output": 43820.24696724382
+            },
+            {
+                "input": {
+                    "x": 6.717230472473215,
+                    "y": -1.6696640633279323,
+                    "z": 0.5125497785687259
+                },
+                "output": -390.1184680836657
+            },
+            {
+                "input": {
+                    "x": 1.6324408282471587,
+                    "y": -4.554638134376942,
+                    "z": -9.069191705852404
+                },
+                "output": -3949.975557525525
+            },
+            {
+                "input": {
+                    "x": 8.635193782936636,
+                    "y": 4.371915098408403,
+                    "z": 7.131926038410221
+                },
+                "output": 13510.973267480033
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "algebraic",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe input $$-x^3 + xy^5 + z^3$$ is a mathematical expression that can be represented in Python using the following mapping rules:\n\n- Exponents are represented using the ** operator.\n- Multiplication is represented using the * operator.\n- Addition and subtraction are represented using the + and - operators, respectively.\n\n**PYTHON RULES**\n\nThe Python function that corresponds to the given latex expression is defined as follows:\n\n```python\ndef _lambdifygenerated(x, y, z):\n    return -x**3 + x*y**5 + z**3\n```\n\n**The function takes the following arguments:**\n\n- `x`: The first variable in the expression.\n- `y`: The second variable in the expression.\n- `z`: The third variable in the expression.\n\n**The calculation is done as follows:**\n\n1. The value of `x` is cubed using the ** operator.\n2. The value of `y` is raised to the power of 5 using the ** operator.\n3. The value of `x` is multiplied by the value of `y**5` using the * operator.\n4. The value of `z` is cubed using the ** operator.\n5. The value of `-x**3` is added to the value of `x*y**5` using the + operator.\n6. The value of `x*y**5 + z**3` is returned as the output of the function.\n\n**The output of the function is a single value that represents the result of the calculation.**"
+    },
+    {
+        "task_id": "3",
+        "sympy_exp": "2*x + 20*y - 4",
+        "latex_exp": "2 x + 20 y - 4 = 0",
+        "solution": "def _lambdifygenerated(x, y):\n    return 2*x + 20*y - 4",
+        "simplified_solution": "2*x + 20*y - 4",
+        "synthetic": true,
+        "domain": "Mathematics_Diophantine",
+        "coefficients": {
+            "a": 2,
+            "b": 20,
+            "c": 4
+        },
+        "test_cases": [
+            {
+                "input": {
+                    "x": 4,
+                    "y": -1
+                },
+                "output": -16
+            },
+            {
+                "input": {
+                    "x": -2,
+                    "y": -1
+                },
+                "output": -28
+            },
+            {
+                "input": {
+                    "x": -3,
+                    "y": 8
+                },
+                "output": 150
+            },
+            {
+                "input": {
+                    "x": -4,
+                    "y": -5
+                },
+                "output": -112
+            },
+            {
+                "input": {
+                    "x": -4,
+                    "y": 10
+                },
+                "output": 188
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "linear_diophantine",
+        "output_type": "integer",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe latex expression is mapped to the python code as follows:\n\n- `x` maps to `x`\n- `y` maps to `y`\n- `2` maps to `2`\n- `+` maps to `+`\n- `-` maps to `-`\n- `=` maps to `==`\n- `0` maps to `0`\n\n**PYTHON RULES**\n\n- The function takes two arguments, `x` and `y`.\n- The function returns the value of the latex expression, which is `2*x + 20*y - 4`.\n- The calculation is done using the Python operators `+` and `-`.\n\n**OUTPUT**\n\nThe output of the function is a floating-point number that represents the value of the latex expression."
+    },
+    {
+        "task_id": "7",
+        "sympy_exp": "sin(z)*cos(z)",
+        "latex_exp": "\\sin{\\left(z \\right)} \\cos{\\left(z \\right)}",
+        "solution": "from numpy import sin\nfrom numpy import cos\ndef _lambdifygenerated(x, y, z):\n    return sin(z)*cos(z)",
+        "simplified_solution": "sin(2*z)/2",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": -0.6153034246584337,
+                    "y": -0.15479643618919559,
+                    "z": 8.891924249384807
+                },
+                "output": -0.43756572926923365
+            },
+            {
+                "input": {
+                    "x": 9.847803905517324,
+                    "y": 0.9616190053045957,
+                    "z": 0.818666965686468
+                },
+                "output": 0.4988935950791548
+            },
+            {
+                "input": {
+                    "x": 8.512565863674407,
+                    "y": -0.6080854553280188,
+                    "z": -1.0718948167768243
+                },
+                "output": -0.4201409608251943
+            },
+            {
+                "input": {
+                    "x": -5.3694049638497665,
+                    "y": -0.6729230504453421,
+                    "z": 1.4167185499107688
+                },
+                "output": 0.15165079523660852
+            },
+            {
+                "input": {
+                    "x": -7.868846611302973,
+                    "y": 0.45071799791612466,
+                    "z": -8.691374111324528
+                },
+                "output": 0.4972990265781541
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "trigonometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n- The `\\sin` function is mapped to the `numpy.sin` function.\n- The `\\cos` function is mapped to the `numpy.cos` function.\n\n**PYTHON RULES**\n- The function takes the following arguments:\n  - `z`: The input value.\n- The function returns the sine of the input value multiplied by the cosine of the input value.\n- The sin and cos functions are called with the z argument.\n\n**OUTPUT**\nThe function returns the value of the expression `sin(z)*cos(z)`."
+    },
+    {
+        "task_id": "9",
+        "sympy_exp": "5*x + 20*y - 68",
+        "latex_exp": "5 x + 20 y - 68 = 0",
+        "solution": "def _lambdifygenerated(x, y):\n    return 5*x + 20*y - 68",
+        "simplified_solution": "5*x + 20*y - 68",
+        "synthetic": true,
+        "domain": "Mathematics_Diophantine",
+        "coefficients": {
+            "a": 5,
+            "b": 20,
+            "c": 68
+        },
+        "test_cases": [
+            {
+                "input": {
+                    "x": -4,
+                    "y": 8
+                },
+                "output": 72
+            },
+            {
+                "input": {
+                    "x": -7,
+                    "y": -3
+                },
+                "output": -163
+            },
+            {
+                "input": {
+                    "x": -10,
+                    "y": 5
+                },
+                "output": -18
+            },
+            {
+                "input": {
+                    "x": -5,
+                    "y": -6
+                },
+                "output": -213
+            },
+            {
+                "input": {
+                    "x": 2,
+                    "y": 9
+                },
+                "output": 122
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "linear_diophantine",
+        "output_type": "integer",
+        "description": "**LATEX TO PYTHON MAPPING**\n\n- The LaTeX expression is mapped to a Python function using the `Sympy` library.\n- The `sympy_exp` field contains the Sympy expression.\n- The `latex_exp` field contains the LaTeX expression.\n\n**PYTHON RULES**\n\n- The Python function takes two arguments: `x` and `y`.\n- The function calculates the value of the expression `5*x + 20*y - 68`.\n- The function uses the `*` operator to multiply the variables `x` and `y` by the constants 5 and 20, respectively.\n- The function uses the `+` operator to add the two products.\n- The function uses the `-` operator to subtract the constant 68 from the sum.\n\n**OUTPUT**\n\n- The function returns the value of the expression `5*x + 20*y - 68`."
+    },
+    {
+        "task_id": "8",
+        "sympy_exp": "x0 + 18*x1 + 6*x2 + 17*x3 + 19*x4 + 8*x5 + 9*x6 + 11*x7 + 11*x8 + x9",
+        "latex_exp": "x_{0} + 18 x_{1} + 6 x_{2} + 17 x_{3} + 19 x_{4} + 8 x_{5} + 9 x_{6} + 11 x_{7} + 11 x_{8} + x_{9}",
+        "solution": "def _lambdifygenerated(x0, x1, x2, x3, x4, x5, x6, x7, x8, x9):\n    return 1*x0 + 18*x1 + 6*x2 + 17*x3 + 19*x4 + 8*x5 + 9*x6 + 11*x7 + 11*x8 + 1*x9",
+        "simplified_solution": "x0 + 18*x1 + 6*x2 + 17*x3 + 19*x4 + 8*x5 + 9*x6 + 11*x7 + 11*x8 + x9",
+        "synthetic": true,
+        "domain": "Mathematics_Summation",
+        "coefficients": [
+            1,
+            18,
+            6,
+            17,
+            19,
+            8,
+            9,
+            11,
+            11,
+            1
+        ],
+        "test_cases": [
+            {
+                "input": {
+                    "x0": -4,
+                    "x1": -10,
+                    "x2": 4,
+                    "x3": 10,
+                    "x4": 2,
+                    "x5": -5,
+                    "x6": 3,
+                    "x7": -7,
+                    "x8": 8,
+                    "x9": 9
+                },
+                "output": 55
+            },
+            {
+                "input": {
+                    "x0": 5,
+                    "x1": -9,
+                    "x2": -6,
+                    "x3": -8,
+                    "x4": 8,
+                    "x5": 8,
+                    "x6": 10,
+                    "x7": -7,
+                    "x8": -8,
+                    "x9": 3
+                },
+                "output": -185
+            },
+            {
+                "input": {
+                    "x0": 8,
+                    "x1": 5,
+                    "x2": 7,
+                    "x3": 0,
+                    "x4": -4,
+                    "x5": -2,
+                    "x6": 10,
+                    "x7": 10,
+                    "x8": -5,
+                    "x9": 8
+                },
+                "output": 201
+            },
+            {
+                "input": {
+                    "x0": 8,
+                    "x1": 0,
+                    "x2": 8,
+                    "x3": 1,
+                    "x4": 0,
+                    "x5": 2,
+                    "x6": 2,
+                    "x7": -4,
+                    "x8": 9,
+                    "x9": -6
+                },
+                "output": 156
+            },
+            {
+                "input": {
+                    "x0": 3,
+                    "x1": 3,
+                    "x2": -7,
+                    "x3": 5,
+                    "x4": -5,
+                    "x5": 9,
+                    "x6": -6,
+                    "x7": -2,
+                    "x8": -9,
+                    "x9": -8
+                },
+                "output": -106
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "summation",
+        "output_type": "real",
+        "description": "## **LATEX TO PYTHON MAPPING**\n\nThe latex expression `x_{0} + 18 x_{1} + 6 x_{2} + 17 x_{3} + 19 x_{4} + 8 x_{5} + 9 x_{6} + 11 x_{7} + 11 x_{8} + x_{9}` is mapped to the following Python function:\n\n```python\ndef _lambdifygenerated(x0, x1, x2, x3, x4, x5, x6, x7, x8, x9):\n    return 1*x0 + 18*x1 + 6*x2 + 17*x3 + 19*x4 + 8*x5 + 9*x6 + 11*x7 + 11*x8 + 1*x9\n```\n\n## **PYTHON RULES**\n\n- The function takes 10 arguments: `x0`, `x1`, `x2`, `x3`, `x4`, `x5`, `x6`, `x7`, `x8`, and `x9`.\n- Each argument is multiplied by a constant: `x0` is multiplied by `1`, `x1` is multiplied by `18`, `x2` is multiplied by `6`, `x3` is multiplied by `17`, `x4` is multiplied by `19`, `x5` is multiplied by `8`, `x6` is multiplied by `9`, `x7` is multiplied by `11`, `x8` is multiplied by `11`, and `x9` is multiplied by `1`.\n- The results of the multiplications are added together.\n- The sum is returned as the output of the function.\n\n## **OUTPUT**\n\nThe output of the function is a number, which is the result of the calculation `1*x0 + 18*x1 + 6*x2 + 17*x3 + 19*x4 + 8*x5 + 9*x6 + 11*x7 + 11*x8 + 1*x9`."
+    },
+    {
+        "task_id": "5",
+        "sympy_exp": "16*x0 + 5*x1 + 9*x2 + 8*x3",
+        "latex_exp": "16 x_{0} + 5 x_{1} + 9 x_{2} + 8 x_{3}",
+        "solution": "def _lambdifygenerated(x0, x1, x2, x3):\n    return 16*x0 + 5*x1 + 9*x2 + 8*x3",
+        "simplified_solution": "16*x0 + 5*x1 + 9*x2 + 8*x3",
+        "synthetic": true,
+        "domain": "Mathematics_Summation",
+        "coefficients": [
+            16,
+            5,
+            9,
+            8
+        ],
+        "test_cases": [
+            {
+                "input": {
+                    "x0": 10,
+                    "x1": -5,
+                    "x2": -2,
+                    "x3": 1
+                },
+                "output": 125
+            },
+            {
+                "input": {
+                    "x0": 3,
+                    "x1": -3,
+                    "x2": 4,
+                    "x3": 1
+                },
+                "output": 77
+            },
+            {
+                "input": {
+                    "x0": -2,
+                    "x1": 7,
+                    "x2": 9,
+                    "x3": 3
+                },
+                "output": 108
+            },
+            {
+                "input": {
+                    "x0": -4,
+                    "x1": 6,
+                    "x2": -6,
+                    "x3": -3
+                },
+                "output": -112
+            },
+            {
+                "input": {
+                    "x0": -9,
+                    "x1": 9,
+                    "x2": -8,
+                    "x3": 1
+                },
+                "output": -163
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "summation",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING:**\n\n- Replace x0 with x0.\n- Replace x1 with x1.\n- Replace x2 with x2.\n- Replace x3 with x3.\n\n**PYTHON RULES:**\n\n- The output of the function is a float.\n- The calculation is done by adding the products of 16 and x0, 5 and x1, 9 and x2, and 8 and x3.\n\n**PYTHON FUNCTION**\n```python\ndef _lambdifygenerated(x0, x1, x2, x3):\n    \n    Calculate the value of the latex expression:\n    16 x_{0} + 5 x_{1} + 9 x_{2} + 8 x_{3}\n    \n    return 16*x0 + 5*x1 + 9*x2 + 8*x3\n```"
+    },
+    {
+        "task_id": "8",
+        "sympy_exp": "7*x + 17*y - 22",
+        "latex_exp": "7 x + 17 y - 22 = 0",
+        "solution": "def _lambdifygenerated(x, y):\n    return 7*x + 17*y - 22",
+        "simplified_solution": "7*x + 17*y - 22",
+        "synthetic": true,
+        "domain": "Mathematics_Diophantine",
+        "coefficients": {
+            "a": 7,
+            "b": 17,
+            "c": 22
+        },
+        "test_cases": [
+            {
+                "input": {
+                    "x": -8,
+                    "y": -7
+                },
+                "output": -197
+            },
+            {
+                "input": {
+                    "x": -7,
+                    "y": -10
+                },
+                "output": -241
+            },
+            {
+                "input": {
+                    "x": -2,
+                    "y": -9
+                },
+                "output": -189
+            },
+            {
+                "input": {
+                    "x": 3,
+                    "y": -3
+                },
+                "output": -52
+            },
+            {
+                "input": {
+                    "x": 8,
+                    "y": 8
+                },
+                "output": 170
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "linear_diophantine",
+        "output_type": "integer",
+        "description": "**LATEX TO PYTHON MAPPING**\n\n* The LaTeX expression `7 x + 17 y - 22 = 0` is mapped to the Python function `_lambdifygenerated(x, y)`.\n\n**PYTHON RULES**\n\n* The function takes two arguments, `x` and `y`.\n* The function returns the value of the LaTeX expression `7 x + 17 y - 22`.\n* The calculation is done using the Python operators `+` and `*`.\n* The output of the function is a numerical value.\n\n**HOW TO USE THE FUNCTION**\n\nTo use the function, you can call it with two arguments, `x` and `y`. For example, the following code calculates the value of the LaTeX expression `7 x + 17 y - 22` for `x = 1` and `y = 2`:\n\n```python\nresult = _lambdifygenerated(1, 2)\nprint(result)  # Output: -3\n```"
+    },
+    {
+        "task_id": "5",
+        "sympy_exp": "sin(z)*cos(x) - atan(x)",
+        "latex_exp": "\\sin{\\left(z \\right)} \\cos{\\left(x \\right)} - \\operatorname{atan}{\\left(x \\right)}",
+        "solution": "from numpy import sin\nfrom numpy import arctan\nfrom numpy import cos\ndef _lambdifygenerated(x, y, z):\n    return sin(z)*cos(x) - arctan(x)",
+        "simplified_solution": "sin(z)*cos(x) - atan(x)",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": 8.588077142391114,
+                    "y": 0.6460941924271641,
+                    "z": -5.504262924769252
+                },
+                "output": -1.9255024099432099
+            },
+            {
+                "input": {
+                    "x": -6.880984088556148,
+                    "y": 0.8513580363888558,
+                    "z": 0.895229511334783
+                },
+                "output": 2.071499778597519
+            },
+            {
+                "input": {
+                    "x": -3.200654731677619,
+                    "y": 0.8881854976325916,
+                    "z": 3.029822045834516
+                },
+                "output": 1.1566261476387294
+            },
+            {
+                "input": {
+                    "x": -0.9542207286287372,
+                    "y": 0.10071662121675296,
+                    "z": -5.253420508286981
+                },
+                "output": 1.25763517875392
+            },
+            {
+                "input": {
+                    "x": -2.656041276343828,
+                    "y": -0.24103951769356802,
+                    "z": -8.57978148423454
+                },
+                "output": 1.8722279512033946
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "trigonometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n- `\\\\sin{...}` is mapped to `sin(...)` in Python.\n- `\\\\cos{...}` is mapped to `cos(...)` in Python.\n- `\\\\operatorname{atan}{...}` is mapped to `arctan(...)` in Python.\n\n**PYTHON RULES**\n- The function takes three arguments: `x`, `y`, and `z`.\n- The expression `sin(z)*cos(x) - arctan(x)` is evaluated in Python.\n- The result of the evaluation is returned as a floating-point number.\n\n**OUTPUT**\n- The output of the function is a floating-point number that represents the value of the expression `sin(z)*cos(x) - arctan(x)` for the given values of `x`, `y`, and `z`."
+    },
+    {
+        "task_id": "6",
+        "sympy_exp": "13*x + 13*y - 90",
+        "latex_exp": "13 x + 13 y - 90 = 0",
+        "solution": "def _lambdifygenerated(x, y):\n    return 13*x + 13*y - 90",
+        "simplified_solution": "13*x + 13*y - 90",
+        "synthetic": true,
+        "domain": "Mathematics_Diophantine",
+        "coefficients": {
+            "a": 13,
+            "b": 13,
+            "c": 90
+        },
+        "test_cases": [
+            {
+                "input": {
+                    "x": 7,
+                    "y": -1
+                },
+                "output": -12
+            },
+            {
+                "input": {
+                    "x": 4,
+                    "y": 7
+                },
+                "output": 53
+            },
+            {
+                "input": {
+                    "x": -3,
+                    "y": -5
+                },
+                "output": -194
+            },
+            {
+                "input": {
+                    "x": 8,
+                    "y": -4
+                },
+                "output": -38
+            },
+            {
+                "input": {
+                    "x": 3,
+                    "y": -10
+                },
+                "output": -181
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "linear_diophantine",
+        "output_type": "integer",
+        "description": "### LATEX TO PYTHON MAPPING\n\nThe mapping from the LaTeX expression to the Python code is as follows:\n\n* **Variables**\n   * x is mapped to the variable x in the Python code\n   * y is mapped to the variable y in the Python code\n   * The = sign is removed from the LaTeX expression.\n\n**PYTHON RULES**\n\nThe Python code follows these rules:\n\n* The code is a function that takes two arguments, x and y.\n* The function returns the value of the LaTeX expression 13 * x + 13 * y - 90.\n* The calculation is done using the Python operators * and +.\n* The output of the function is a number.\n\n### PYTHON CODE\n\n```python\ndef _lambdifygenerated(x, y):\n    return 13*x + 13*y - 90\n```"
+    },
+    {
+        "task_id": "2",
+        "sympy_exp": "15*x0 + 10*x1 + 18*x2 + 14*x3 + 15*x4",
+        "latex_exp": "15 x_{0} + 10 x_{1} + 18 x_{2} + 14 x_{3} + 15 x_{4}",
+        "solution": "def _lambdifygenerated(x0, x1, x2, x3, x4):\n    return 15*x0 + 10*x1 + 18*x2 + 14*x3 + 15*x4",
+        "simplified_solution": "15*x0 + 10*x1 + 18*x2 + 14*x3 + 15*x4",
+        "synthetic": true,
+        "domain": "Mathematics_Summation",
+        "coefficients": [
+            15,
+            10,
+            18,
+            14,
+            15
+        ],
+        "test_cases": [
+            {
+                "input": {
+                    "x0": -2,
+                    "x1": 5,
+                    "x2": 0,
+                    "x3": -9,
+                    "x4": -9
+                },
+                "output": -241
+            },
+            {
+                "input": {
+                    "x0": -2,
+                    "x1": -1,
+                    "x2": -1,
+                    "x3": 6,
+                    "x4": 5
+                },
+                "output": 101
+            },
+            {
+                "input": {
+                    "x0": 0,
+                    "x1": 4,
+                    "x2": 6,
+                    "x3": 0,
+                    "x4": -4
+                },
+                "output": 88
+            },
+            {
+                "input": {
+                    "x0": -3,
+                    "x1": 8,
+                    "x2": -2,
+                    "x3": -6,
+                    "x4": 9
+                },
+                "output": 50
+            },
+            {
+                "input": {
+                    "x0": -2,
+                    "x1": 4,
+                    "x2": -1,
+                    "x3": -10,
+                    "x4": 2
+                },
+                "output": -118
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "summation",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\nFor a linear combination of terms, the variables are mapped to their python counterparts. The coefficients in front of the variables are mapped directly.\n\n**PYTHON RULES**\n- The function takes 5 arguments, one for each variable in the latex expression.\n- The calculation is done by multiplying each variable by its respective coefficient and adding the results together.\n- The output of the function is the result of the calculation.\n\n**Example:**\nThe latex expression \"15 x_{0} + 10 x_{1} + 18 x_{2} + 14 x_{3} + 15 x_{4}\" maps to the python function:\n\n```python\ndef _lambdifygenerated(x0, x1, x2, x3, x4):\n    return 15*x0 + 10*x1 + 18*x2 + 14*x3 + 15*x4\n```"
+    },
+    {
+        "task_id": "4",
+        "sympy_exp": "3*x0 + 14*x1 + 14*x2",
+        "latex_exp": "3 x_{0} + 14 x_{1} + 14 x_{2}",
+        "solution": "def _lambdifygenerated(x0, x1, x2):\n    return 3*x0 + 14*x1 + 14*x2",
+        "simplified_solution": "3*x0 + 14*x1 + 14*x2",
+        "synthetic": true,
+        "domain": "Mathematics_Summation",
+        "coefficients": [
+            3,
+            14,
+            14
+        ],
+        "test_cases": [
+            {
+                "input": {
+                    "x0": -10,
+                    "x1": 0,
+                    "x2": -3
+                },
+                "output": -72
+            },
+            {
+                "input": {
+                    "x0": 0,
+                    "x1": 8,
+                    "x2": 10
+                },
+                "output": 252
+            },
+            {
+                "input": {
+                    "x0": -3,
+                    "x1": 2,
+                    "x2": 10
+                },
+                "output": 159
+            },
+            {
+                "input": {
+                    "x0": 1,
+                    "x1": -4,
+                    "x2": 3
+                },
+                "output": -11
+            },
+            {
+                "input": {
+                    "x0": -2,
+                    "x1": -9,
+                    "x2": -10
+                },
+                "output": -272
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "summation",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe LaTeX expression is mapped to a Python function as follows:\n\n- The LaTeX expression is split into terms.\n- Each term is mapped to a Python expression.\n- The Python expressions are added together to form the body of the function.\n\n**PYTHON RULES**\n\nThe Python function takes the following arguments:\n\n- `x0`: The value of the variable `x0`.\n- `x1`: The value of the variable `x1`.\n- `x2`: The value of the variable `x2`.\n\nThe function calculates the value of the LaTeX expression by evaluating each term and adding the results together. The following Python functions and operators are used:\n\n- `*`: The multiplication operator.\n- `+`: The addition operator.\n\nThe output of the function is the value of the LaTeX expression.\n\n**EXAMPLE**\n\nThe LaTeX expression `3 x_{0} + 14 x_{1} + 14 x_{2}` is mapped to the Python function:\n\n```python\ndef _lambdifygenerated(x0, x1, x2):\n    return 3*x0 + 14*x1 + 14*x2\n```\n\nThis function takes the values of the variables `x0`, `x1`, and `x2` as arguments and returns the value of the LaTeX expression."
+    },
+    {
+        "task_id": "7",
+        "sympy_exp": "3*x + 3*y - 94",
+        "latex_exp": "3 x + 3 y - 94 = 0",
+        "solution": "def _lambdifygenerated(x, y):\n    return 3*x + 3*y - 94",
+        "simplified_solution": "3*x + 3*y - 94",
+        "synthetic": true,
+        "domain": "Mathematics_Diophantine",
+        "coefficients": {
+            "a": 3,
+            "b": 3,
+            "c": 94
+        },
+        "test_cases": [
+            {
+                "input": {
+                    "x": 4,
+                    "y": -7
+                },
+                "output": -103
+            },
+            {
+                "input": {
+                    "x": 6,
+                    "y": 2
+                },
+                "output": -70
+            },
+            {
+                "input": {
+                    "x": -4,
+                    "y": 6
+                },
+                "output": -88
+            },
+            {
+                "input": {
+                    "x": -8,
+                    "y": -9
+                },
+                "output": -145
+            },
+            {
+                "input": {
+                    "x": -9,
+                    "y": -2
+                },
+                "output": -127
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "linear_diophantine",
+        "output_type": "integer",
+        "description": "**LATEX TO PYTHON MAPPING**\n- The input latex expression is \"3 x + 3 y - 94 = 0\".\n- The output python function '_lambdifygenerated' has the variables 'x' and 'y' as inputs and returns the expression\n  \"3*x + 3*y - 94\".\n\n**PYTHON RULES**\n- The python function is named '_lambdifygenerated'.\n- The function takes two arguments, 'x' and 'y', which are the input variables for the latex expression.\n- The function calculates the value of the latex expression by multiplying 'x' and 'y' by 3, and then subtracting 94.\n- The function uses the python operators '*', '+', and '-' to perform the calculations.\n- The function returns the value of the latex expression as the output."
+    },
+    {
+        "task_id": "7",
+        "sympy_exp": "l**2 + l*w",
+        "latex_exp": "l^{2} + l w",
+        "solution": "\ndef _lambdifygenerated(l, w):\n    return l**2 + l*w",
+        "simplified_solution": "l*(l + w)",
+        "synthetic": true,
+        "domain": "Mathematics_Geometry",
+        "test_cases": [
+            {
+                "input": {
+                    "l": 8.331840821963961,
+                    "w": 9.117327559339763
+                },
+                "output": 145.38369342866918
+            },
+            {
+                "input": {
+                    "l": 7.684667230365904,
+                    "w": 2.8060036571176106
+                },
+                "output": 80.61731479359817
+            },
+            {
+                "input": {
+                    "l": 2.124305143115485,
+                    "w": 7.581196152436947
+                },
+                "output": 20.617446318656036
+            },
+            {
+                "input": {
+                    "l": 4.635533102759743,
+                    "w": 4.455566968114788
+                },
+                "output": 42.14209531904033
+            },
+            {
+                "input": {
+                    "l": 7.666013377052409,
+                    "w": 6.850110824755009
+                },
+                "output": 111.28080231400989
+            }
+        ],
+        "complexity": "3",
+        "equation_type": "geometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\n- The latex expression `l^{2} + l w` maps to the Python function `lambda l, w: l**2 + l*w`.\n\n**PYTHON RULES**\n\n- The function takes two arguments: `l` and `w`.\n- The function calculates the value of `l**2 + l*w`.\n- The function returns the calculated value.\n\n**OUTPUT**\n\n- The function returns a floating-point number representing the value of `l**2 + l*w`."
+    },
+    {
+        "task_id": "1",
+        "sympy_exp": "(sin(z) - cos(x))*atan(x)",
+        "latex_exp": "\\left(\\sin{\\left(z \\right)} - \\cos{\\left(x \\right)}\\right) \\operatorname{atan}{\\left(x \\right)}",
+        "solution": "from numpy import sin\nfrom numpy import arctan\nfrom numpy import cos\ndef _lambdifygenerated(x, y, z):\n    return (sin(z) - cos(x))*arctan(x)",
+        "simplified_solution": "(sin(z) - cos(x))*atan(x)",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": -9.097631088695579,
+                    "y": 0.2549737880607641,
+                    "z": -4.085748275904056
+                },
+                "output": -2.567483131282714
+            },
+            {
+                "input": {
+                    "x": 3.4696555631882653,
+                    "y": 0.29895097551286653,
+                    "z": 1.3031939655592968
+                },
+                "output": 2.465647258671237
+            },
+            {
+                "input": {
+                    "x": 4.160159605468131,
+                    "y": 0.25739030448036626,
+                    "z": 8.199788814716534
+                },
+                "output": 1.95614212235742
+            },
+            {
+                "input": {
+                    "x": 3.919702240932775,
+                    "y": 0.3404725369345585,
+                    "z": 4.0514764628736355
+                },
+                "output": -0.10196912986093797
+            },
+            {
+                "input": {
+                    "x": 6.739163124721092,
+                    "y": -0.8849984813128458,
+                    "z": -7.516977142253014
+                },
+                "output": -2.6214616634670347
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "trigonometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe given LATEX expression is:\n```\n$$\\left( \\sin(z) - \\cos(x) \\right) \\operatorname{atan}(x) $$\n```\nTo convert this expression to Python code, we can use the `sympy` library's `lambdify` function. This function takes a sympy expression and a list of variables, and returns a Python function that evaluates the expression for the given values of the variables.\n\nIn this case, the LATEX expression has three variables: `x`, `y`, and `z`. Therefore, we will need to pass a list of three variables to the `lambdify` function.\n\n**PYTHON RULES**\n\nThe Python function that is generated by the `lambdify` function takes the following arguments:\n\n* `x`: The value of the variable `x`.\n* `y`: The value of the variable `y`.\n* `z`: The value of the variable `z`.\n\nThe function calculates the value of the LATEX expression for the given values of the variables. The calculation is done using the following Python functions and operators:\n\n* `sin()`: The sine function.\n* `cos()`: The cosine function.\n* `arctan()`: The arctangent function.\n* `*`: The multiplication operator.\n* `-`: The subtraction operator.\n\nThe output of the function is a single number, which is the value of the LATEX expression for the given values of the variables.\n\n**Here is the complete Python code for the function:**\n```python\nfrom numpy import sin\nfrom numpy import arctan\nfrom numpy import cos\ndef _lambdifygenerated(x, y, z):\n    return (sin(z) - cos(x))*arctan(x)\n\n```"
+    },
+    {
+        "task_id": "5",
+        "sympy_exp": "x**2*(x + 2*z) - z**3",
+        "latex_exp": "x^{2} \\left(x + 2 z\\right) - z^{3}",
+        "solution": "def _lambdifygenerated(x, y, z):\n    return x**2*(x + 2*z) - z**3",
+        "simplified_solution": "x**2*(x + 2*z) - z**3",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": 9.939480518664777,
+                    "y": -5.23235231387752,
+                    "z": -5.236575397665204
+                },
+                "output": 90.87288091480998
+            },
+            {
+                "input": {
+                    "x": -1.171966400656295,
+                    "y": -5.494264599980763,
+                    "z": 4.313284583108842
+                },
+                "output": -70.00723877099887
+            },
+            {
+                "input": {
+                    "x": 1.8169259069485406,
+                    "y": 5.733271065293346,
+                    "z": 1.6002154567285043
+                },
+                "output": 12.465742504538554
+            },
+            {
+                "input": {
+                    "x": -1.4074526108673062,
+                    "y": 2.6372413527162326,
+                    "z": -5.903986539583563
+                },
+                "output": 179.616856943134
+            },
+            {
+                "input": {
+                    "x": 9.785015566839729,
+                    "y": -7.280561243176993,
+                    "z": 2.5122725686434215
+                },
+                "output": 1402.1078008317768
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "algebraic",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\nThe general mapping is done by following steps:\n- Replace any superscripts with **()**\n- Change x to **x**\n- Change y to **y**\n- Change z to **z**\n\n**PYTHON RULES**\nThe rules for the python function are as follows:\n- All the variables in the expression replaces with their respective arguments.(x -> x, y->y, z->z)\n- Operators (+,-,*,/) are same as latex\n- Parenthesis () are same as latex\n- **()** is used to represent superscripts (eg: x^2 is converted to x**2)\n\n**PYTHON FUNCTION**\n- The function takes three arguments **x** **y** **z**\n- The function calculates the expression x**2*(x + 2*z) - z**3\n- The function returns the result of the expression\n\n**EXAMPLE**\n\nInput: x^{2} \\\\left(x + 2 z\\\\right) - z^{3}\nOutput: def _lambdifygenerated(x, y, z):\n    return x**2*(x + 2*z) - z**3"
+    },
+    {
+        "task_id": "1",
+        "sympy_exp": "x*z + x - y**3 - z**2",
+        "latex_exp": "x z + x - y^{3} - z^{2}",
+        "solution": "def _lambdifygenerated(x, y, z):\n    return x*z + x - y**3 - z**2",
+        "simplified_solution": "x*z + x - y**3 - z**2",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": -2.081510615281344,
+                    "y": -8.030583482343086,
+                    "z": 9.91442304490613
+                },
+                "output": 396.88023386051856
+            },
+            {
+                "input": {
+                    "x": -8.378780112429355,
+                    "y": 6.682029374292455,
+                    "z": -8.75694875102374
+                },
+                "output": -310.03976469442017
+            },
+            {
+                "input": {
+                    "x": -6.415341140156265,
+                    "y": -5.628508676986732,
+                    "z": -0.2804507696126546
+                },
+                "output": 173.6169671972861
+            },
+            {
+                "input": {
+                    "x": -5.93639567618273,
+                    "y": 0.09977241473534626,
+                    "z": -8.122082074302469
+                },
+                "output": -23.68971317836659
+            },
+            {
+                "input": {
+                    "x": 5.518073164864077,
+                    "y": 5.694310648219554,
+                    "z": 3.4952876629739205
+                },
+                "output": -172.0507218285146
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "algebraic",
+        "output_type": "real",
+        "description": "- **LATEX TO PYTHON MAPPING**\n    - The latex expression \"x z + x - y^{3} - z^{2}\" is mapped to the python code \"def _lambdifygenerated(x, y, z):\\n    return x*z + x - y**3 - z**2\".\n    - The variables x, y, and z are mapped to the corresponding python parameters x, y, and z.\n    - The exponentiation operator \"^\" is mapped to the Python exponentiation operator \"**\".\n\n- **PYTHON RULES**\n    - The function takes three arguments: x, y, and z.\n    - The function returns the result of the calculation x*z + x - y**3 - z**2.\n    - The calculation is performed using the Python operators \"*\", \"+\", \"-\" and \"**\".\n    - The output of the function is a numeric value."
+    },
+    {
+        "task_id": "9",
+        "sympy_exp": "y**2 + y - z",
+        "latex_exp": "y^{2} + y - z",
+        "solution": "def _lambdifygenerated(x, y, z):\n    return y**2 + y - z",
+        "simplified_solution": "y**2 + y - z",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": 3.3453933897431085,
+                    "y": -3.178868886083242,
+                    "z": -0.1795587494334825
+                },
+                "output": 7.105897258258352
+            },
+            {
+                "input": {
+                    "x": -7.7915773351071955,
+                    "y": 4.595953697275917,
+                    "z": 5.8233636410463685
+                },
+                "output": 19.895380443733714
+            },
+            {
+                "input": {
+                    "x": -0.16105787265304272,
+                    "y": 0.06490212354076519,
+                    "z": 7.458091682430641
+                },
+                "output": -7.388977273249775
+            },
+            {
+                "input": {
+                    "x": 4.63892402277439,
+                    "y": -2.0789982544254144,
+                    "z": -7.799678523447513
+                },
+                "output": 10.042914010926019
+            },
+            {
+                "input": {
+                    "x": -0.6561034729351878,
+                    "y": 5.610473651532882,
+                    "z": 8.458918812396647
+                },
+                "output": 28.628969433680943
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "algebraic",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe latex expression is mapped to a Python function as follows:\n\n- `y^{2}` maps to `y**2`\n- `y` maps to `y`\n- `z` maps to `z`\n- `+` maps to `+`\n- `-` maps to `-`\n\n**PYTHON RULES**\n\n* The Python function takes three arguments: `x`, `y`, and `z`.\n* The function first calculates `y**2`.\n* Then it adds `y` to `y**2`.\n* Finally, it subtracts `z` from the sum of `y**2` and `y`.\n* The output of the function is the result of the calculation.\n\n**PYTHON FUNCTION**\n\n```python\ndef _lambdifygenerated(x, y, z):\n    return y**2 + y - z\n```"
+    },
+    {
+        "task_id": "2",
+        "sympy_exp": "x*y - x",
+        "latex_exp": "x y - x",
+        "solution": "def _lambdifygenerated(x, y, z):\n    return x*y - x",
+        "simplified_solution": "x*(y - 1)",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": -7.072153590046309,
+                    "y": 7.3856534345471445,
+                    "z": -7.220019502686464
+                },
+                "output": -45.16032186192413
+            },
+            {
+                "input": {
+                    "x": -7.478197492515804,
+                    "y": -0.1648549896370497,
+                    "z": 1.7689947881961778
+                },
+                "output": 8.711015662648308
+            },
+            {
+                "input": {
+                    "x": -5.196676938494591,
+                    "y": 0.17484550026715517,
+                    "z": 6.850638417432755
+                },
+                "output": 4.288061359456716
+            },
+            {
+                "input": {
+                    "x": -7.762050767820683,
+                    "y": 7.475093468340582,
+                    "z": -7.340532053394815
+                },
+                "output": -50.2600042276437
+            },
+            {
+                "input": {
+                    "x": -3.2217349960295127,
+                    "y": -7.684463345737605,
+                    "z": -7.566828980376387
+                },
+                "output": 27.97903948269839
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "algebraic",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe LaTeX expression \"x y - x\" is mapped to the Python function \"_lambdifygenerated\".\n\n**PYTHON RULES**\n\n* The function \"_lambdifygenerated\" takes three arguments: 'x', 'y', and 'z'.\n* The function calculates 'x*y - x' and returns the result.\n* The operators used in the calculation are: '*', and '-'.\n\n**OUTPUT**\nThe output of the function is the value of 'x*y - x'."
+    },
+    {
+        "task_id": "3",
+        "sympy_exp": "-y - z**2 + z",
+        "latex_exp": "- y - z^{2} + z",
+        "solution": "def _lambdifygenerated(x, y, z):\n    return -y - z**2 + z",
+        "simplified_solution": "-y - z**2 + z",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": 5.62538271674611,
+                    "y": -7.331958334539257,
+                    "z": 8.667056473078588
+                },
+                "output": -59.118853099915626
+            },
+            {
+                "input": {
+                    "x": 2.3670540636487267,
+                    "y": -2.0760443666043287,
+                    "z": 6.785054774519857
+                },
+                "output": -37.17586915211052
+            },
+            {
+                "input": {
+                    "x": 5.343859878570278,
+                    "y": 7.6936015576599175,
+                    "z": -9.731412768643832
+                },
+                "output": -112.12540880002796
+            },
+            {
+                "input": {
+                    "x": -4.190352240554733,
+                    "y": 9.125713324288668,
+                    "z": 3.8697954107549712
+                },
+                "output": -20.231234434633933
+            },
+            {
+                "input": {
+                    "x": -9.412399679284643,
+                    "y": 4.011059101178443,
+                    "z": -8.324221563485409
+                },
+                "output": -81.62794530265933
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "algebraic",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n- The latex expression is mapped to the python function as follows:\n    - $y$ maps to y.\n    - $z$ maps to z.\n    - $^2$ maps to **.\n\n**PYTHON RULES**\n- The function takes three arguments: x, y, and z.\n- The function returns the value of the latex expression.\n- The calculation is done using the following Python functions and operators:\n    - +: addition\n    - -: subtraction\n    - **: exponentiation\n\n**OUTPUT OF THE FUNCTION**\n\nThe output of the function is a numpy ndarray. The shape of the output depends on the shapes of the input arrays. If all the input arrays are scalars, the output is a scalar. If any of the input arrays are arrays, the output is an array with the same shape as the input arrays."
+    },
+    {
+        "task_id": "9",
+        "sympy_exp": "(cos(z) - tan(z))*cos(x) + atan(z)",
+        "latex_exp": "\\left(\\cos{\\left(z \\right)} - \\tan{\\left(z \\right)}\\right) \\cos{\\left(x \\right)} + \\operatorname{atan}{\\left(z \\right)}",
+        "solution": "from numpy import tan\nfrom numpy import arctan\nfrom numpy import cos\ndef _lambdifygenerated(x, y, z):\n    return (cos(z) - tan(z))*cos(x) + arctan(z)",
+        "simplified_solution": "(cos(z) - tan(z))*cos(x) + atan(z)",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": 8.397210149975866,
+                    "y": -0.9518376966048512,
+                    "z": -4.876851267371158
+                },
+                "output": 1.6614187052603824
+            },
+            {
+                "input": {
+                    "x": 4.3542742797097755,
+                    "y": -0.5491734913638906,
+                    "z": 4.397528625875843
+                },
+                "output": 2.531933665392417
+            },
+            {
+                "input": {
+                    "x": -3.9475273223243317,
+                    "y": -0.3946495476678684,
+                    "z": -7.702577778742574
+                },
+                "output": -6.084574888314106
+            },
+            {
+                "input": {
+                    "x": -6.5928628601264405,
+                    "y": 0.2619639713812987,
+                    "z": 7.77664374713169
+                },
+                "output": -10.774147969833999
+            },
+            {
+                "input": {
+                    "x": 6.385443207945443,
+                    "y": -0.38742457968935184,
+                    "z": 2.04008113012309
+                },
+                "output": 2.6269782154142813
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "trigonometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\n**Input**: $$\\left(\\cos{z} - \\tan{z}\\right) \\cos{x} + \\operatorname{atan}{z}$$\n\n**Python Function**: `_lambdifygenerated(x, y, z)`\n\n**PYTHON RULES**\n\n**Function Arguments**:\n\n- `x`: Input variable\n- `y`: Input variable (unused in the function)\n- `z`: Input variable\n\n**Calculation**:\n\n1. Calculate the cosine of `z` using `cos(z)`.\n2. Calculate the tangent of `z` using `tan(z)`.\n3. Subtract the tangent of `z` from the cosine of `z`.\n4. Multiply the result from step 3 by the cosine of `x` using `(cos(z) - tan(z))*cos(x)`.\n5. Calculate the arctangent of `z` using `arctan(z)`.\n6. Add the result from step 4 to the result from step 5.\n\n**Output**:\n\nThe function returns the sum of the calculation performed in step 4 and step 5."
+    },
+    {
+        "task_id": "6",
+        "sympy_exp": "4*pi*r**2 + pi*r*(r + sqrt(h**2 + r**2))",
+        "latex_exp": "4 \\pi r^{2} + \\pi r \\left(r + \\sqrt{h^{2} + r^{2}}\\right)",
+        "solution": "import numpy as np\ndef _lambdifygenerated(h, r):\n    return 4*np.pi*r**2 + np.pi*r*(r + np.sqrt(h**2 + r**2))",
+        "simplified_solution": "pi*r*(5*r + sqrt(h**2 + r**2))",
+        "synthetic": true,
+        "domain": "Mathematics_Geometry",
+        "test_cases": [
+            {
+                "input": {
+                    "h": 9.536505205385176,
+                    "r": 8.719315567080502
+                },
+                "output": 1548.1801864481183
+            },
+            {
+                "input": {
+                    "h": 8.61760407844248,
+                    "r": 4.177331546018998
+                },
+                "output": 399.7850970342405
+            },
+            {
+                "input": {
+                    "h": 2.6488414954137074,
+                    "r": 7.443816903081105
+                },
+                "output": 1055.1544876977493
+            },
+            {
+                "input": {
+                    "h": 9.844982987240094,
+                    "r": 3.5820948016846623
+                },
+                "output": 319.4512691081725
+            },
+            {
+                "input": {
+                    "h": 4.855279005883327,
+                    "r": 5.789742034165058
+                },
+                "output": 663.9866357596197
+            }
+        ],
+        "complexity": "3",
+        "equation_type": "geometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\n- The LaTeX expression `4 \\\\pi r^{2} + \\\\pi r \\\\left(r + \\\\sqrt{h^{2} + r^{2}}\\\\right)` is mapped to the Python function `_lambdifygenerated`.\n\n**Explain how the input maps to the latex expression.**\n\n- The input to the Python function is two variables, `h` and `r`, which correspond to the variables in the LaTeX expression.\n\n**PYTHON RULES**\n\n- The Python function takes two arguments, `h` and `r`.\n- The function first calculates the value of the expression `4*np.pi*r**2`.\n- Then, the function calculates the value of the expression `np.pi*r*(r + np.sqrt(h**2 + r**2))`.\n- The function then adds the two values together and returns the result.\n\n**State the latex expression function takes.**\n\n- The LaTeX expression `4 \\\\pi r^{2} + \\\\pi r \\\\left(r + \\\\sqrt{h^{2} + r^{2}}\\\\right)` takes two arguments, `r` and `h`.\n\n**State the arguments the function takes.**\n\n- The Python function `_lambdifygenerated` takes two arguments, `h` and `r`.\n\n**State how the calculation is done. Which python functions and operators were used and in what order.**\n\n- The Python function first calculates the value of the expression `4*np.pi*r**2`.\n- Then, the function calculates the value of the expression `np.pi*r*(r + np.sqrt(h**2 + r**2))`.\n- The function then adds the two values together and returns the result.\n\n**State the output of the function**\n\n- The output of the Python function is a single value, which is the result of the calculation."
+    },
+    {
+        "task_id": "8",
+        "sympy_exp": "x*z**4 + y",
+        "latex_exp": "x z^{4} + y",
+        "solution": "def _lambdifygenerated(x, y, z):\n    return x*z**4 + y",
+        "simplified_solution": "x*z**4 + y",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": 6.557925869208155,
+                    "y": -1.2495079594414165,
+                    "z": -8.98547311167687
+                },
+                "output": 42748.17757805026
+            },
+            {
+                "input": {
+                    "x": -5.164243610336405,
+                    "y": -5.010968994050811,
+                    "z": -7.664188669428107
+                },
+                "output": -17823.524442388505
+            },
+            {
+                "input": {
+                    "x": -9.194991687502025,
+                    "y": -7.437052672974708,
+                    "z": -2.473338589531549
+                },
+                "output": -351.53781514936196
+            },
+            {
+                "input": {
+                    "x": 1.3510039854919302,
+                    "y": 7.309198640523732,
+                    "z": 9.43429724117589
+                },
+                "output": 10710.046135380675
+            },
+            {
+                "input": {
+                    "x": 3.4508257188364837,
+                    "y": -0.8384692915204504,
+                    "z": 0.05094112815792684
+                },
+                "output": -0.8384460535999732
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "algebraic",
+        "output_type": "real",
+        "description": "### LATEX TO PYTHON MAPPING\nThe latex `x z^{4} + y` is mapped to the python function `lambda x, y, z: x * z ** 4 + y`\n\n### PYTHON RULES\n- The function takes three arguments: `x`, `y`, and `z`.\n- It returns the value of the latex expression `x z^{4} + y`.\n- The calculation is done using the `*` and `**` operators.\n- The `*` operator multiplies two numbers, and the `**` operator raises a number to a power.\n- The output of the function is a number.\n\n### Example\n```python\n>>> _lambdifygenerated(2, 3, 4)\n385\n```"
+    },
+    {
+        "task_id": "5",
+        "sympy_exp": "12*x + 7*y - 29",
+        "latex_exp": "12 x + 7 y - 29 = 0",
+        "solution": "def _lambdifygenerated(x, y):\n    return 12*x + 7*y - 29",
+        "simplified_solution": "12*x + 7*y - 29",
+        "synthetic": true,
+        "domain": "Mathematics_Diophantine",
+        "coefficients": {
+            "a": 12,
+            "b": 7,
+            "c": 29
+        },
+        "test_cases": [
+            {
+                "input": {
+                    "x": -5,
+                    "y": -9
+                },
+                "output": -152
+            },
+            {
+                "input": {
+                    "x": -2,
+                    "y": 6
+                },
+                "output": -11
+            },
+            {
+                "input": {
+                    "x": 3,
+                    "y": -7
+                },
+                "output": -42
+            },
+            {
+                "input": {
+                    "x": -8,
+                    "y": 7
+                },
+                "output": -76
+            },
+            {
+                "input": {
+                    "x": 3,
+                    "y": 5
+                },
+                "output": 42
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "linear_diophantine",
+        "output_type": "integer",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe latex expression \"12 x + 7 y - 29 = 0\" is mapped to the python function \"_lambdifygenerated(x, y)\" as follows:\n\n- The variable 'x' in the latex expression is mapped to the parameter 'x' in the python function.\n- The variable 'y' in the latex expression is mapped to the parameter 'y' in the python function.\n- The constant '12' in the latex expression is mapped to the numerical value '12' in the python function.\n- The constant '7' in the latex expression is mapped to the numerical value '7' in the python function.\n- The constant '-29' in the latex expression is mapped to the numerical value '-29' in the python function.\n- The addition operator '+' in the latex expression is mapped to the addition operator '+' in the python function.\n- The subtraction operator '-' in the latex expression is mapped to the subtraction operator '-' in the python function.\n\n**PYTHON RULES**\n\nThe python function \"_lambdifygenerated(x, y)\" takes two arguments, 'x' and 'y', and returns the value of the latex expression \"12 x + 7 y - 29\". The calculation is done as follows:\n\n1. The value of 'x' is multiplied by '12'.\n2. The value of 'y' is multiplied by '7'.\n3. The result of step 1 is added to the result of step 2.\n4. The result of step 3 is subtracted from '29'.\n5. The result of step 4 is returned as the output of the function.\n\n**OUTPUT**\n\nThe output of the function \"_lambdifygenerated(x, y)\" is a numerical value that represents the value of the latex expression \"12 x + 7 y - 29\" for the given values of 'x' and 'y'."
+    },
+    {
+        "task_id": "8",
+        "sympy_exp": "0.333333333333333*pi*h*r**2 + pi*r*(r + sqrt(h**2 + r**2)) + 2*pi*r",
+        "latex_exp": "0.333333333333333 \\pi h r^{2} + \\pi r \\left(r + \\sqrt{h^{2} + r^{2}}\\right) + 2 \\pi r",
+        "solution": "import numpy as np\ndef _lambdifygenerated(h, r):\n    return 0.333333333333333*np.pi*h*r**2 + np.pi*r*(r + np.sqrt(h**2 + r**2)) + 2*np.pi*r",
+        "simplified_solution": "pi*r*(0.333333333333333*h*r + r + sqrt(h**2 + r**2) + 2)",
+        "synthetic": true,
+        "domain": "Mathematics_Geometry",
+        "test_cases": [
+            {
+                "input": {
+                    "h": 3.905898511471611,
+                    "r": 2.0302494960966095
+                },
+                "output": 70.64261523103465
+            },
+            {
+                "input": {
+                    "h": 6.537578005510732,
+                    "r": 1.6839852526446766
+                },
+                "output": 74.61941079284767
+            },
+            {
+                "input": {
+                    "h": 5.398453015258804,
+                    "r": 9.809329677147973
+                },
+                "output": 1252.9472162549569
+            },
+            {
+                "input": {
+                    "h": 8.81349357630187,
+                    "r": 3.2711622509074583
+                },
+                "output": 249.5404231943616
+            },
+            {
+                "input": {
+                    "h": 7.986655169932164,
+                    "r": 6.275565468280696
+                },
+                "output": 692.7891652183899
+            }
+        ],
+        "complexity": "3",
+        "equation_type": "geometric",
+        "output_type": "real",
+        "description": "LATEX TO PYTHON MAPPING\n\n \u2022  The expression 0.333333333333333*pi*h*r**2 + pi*r*(r + sqrt(h**2 + r**2)) + 2*pi*r\" is mapped to the Python function _lambdifygenerated in the solution.\n\n PYTHON RULES\n\n\u2022 The function _lambdifygenerated takes two arguments, h and r, which correspond to the height and radius of the cone in the given latex expression.\n\n\u2022 The calculation is done as follows: first, 0.333333333333333*np.pi*h*r**2, the volume of a cone is calculated. Then, np.pi*r*(r + np.sqrt(h**2 + r**2)), the surface area of a cone is calculated. Finally, 2*np.pi*r, which represents the circumference of the base of the cone, is added as the formula calculated for the surface area. These three values are then summed up and returned.\n\n\u2022 The output of the function _lambdifygenerated is the sum of the volume, surface area, and circumference of the cone, which is a single numeric value."
+    },
+    {
+        "task_id": "10",
+        "sympy_exp": "x*y*(x - y**3)",
+        "latex_exp": "x y \\left(x - y^{3}\\right)",
+        "solution": "def _lambdifygenerated(x, y, z):\n    return x*y*(x - y**3)",
+        "simplified_solution": "x*y*(x - y**3)",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": 4.781856760890138,
+                    "y": 4.6380827767251915,
+                    "z": -1.8447969500638806
+                },
+                "output": -2106.7875888997846
+            },
+            {
+                "input": {
+                    "x": 9.079059965857567,
+                    "y": 0.052804552577509156,
+                    "z": 7.497108403470268
+                },
+                "output": 4.352573295448599
+            },
+            {
+                "input": {
+                    "x": 3.5599909353193926,
+                    "y": -6.446931928022441,
+                    "z": -1.4852677028443786
+                },
+                "output": -6231.508796159712
+            },
+            {
+                "input": {
+                    "x": -6.534829000448264,
+                    "y": 0.20011760532817569,
+                    "z": -7.6593156111397676
+                },
+                "output": 8.556300570869858
+            },
+            {
+                "input": {
+                    "x": -1.5393701606762846,
+                    "y": -1.5392392155743568,
+                    "z": -9.639068340186945
+                },
+                "output": 4.99359601055774
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "algebraic",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\n* The input latex expression \"x y (x - y^3)\" is directly mapped to the python function definition \"def _lambdifygenerated(x, y, z):\".\n\n**PYTHON RULES**\n\n* The function takes three arguments: \"x\", \"y\", and \"z\".\n* The calculation is done using the \"*\" operator for multiplication and the \"-\" operator for subtraction.\n* The output of the function is the result of the multiplication of \"x\", \"y\", and \"(x - y^3)\".\n\n**FUNCTION DEFINITION**\n\n**Syntax:**\n\n```python\ndef _lambdifygenerated(x, y, z):\n    return x*y*(x - y**3)\n```\n\n**Arguments:**\n\n* `x`: The first input number.\n* `y`: The second input number.\n* `z`: This argument is not used.\n\n**Return Value:**\n\n* The product of `x`, `y`, and `(x - y^3)`.\n\n**Calculation:**\n\n* The function multiplies `x` and `y` together.\n* It then subtracts `y^3` from `x`, and multiplies the result by `x` and `y`."
+    },
+    {
+        "task_id": "7",
+        "sympy_exp": "-x - y**2 + y - z",
+        "latex_exp": "- x - y^{2} + y - z",
+        "solution": "def _lambdifygenerated(x, y, z):\n    return -x - y**2 + y - z",
+        "simplified_solution": "-x - y**2 + y - z",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": 6.24464565072617,
+                    "y": -1.8485389973090722,
+                    "z": -5.38241543905515
+                },
+                "output": -6.1278656335525215
+            },
+            {
+                "input": {
+                    "x": -3.068514402897291,
+                    "y": -0.5998265093796746,
+                    "z": -6.621614951575325
+                },
+                "output": 8.730511003738336
+            },
+            {
+                "input": {
+                    "x": 9.351124346691662,
+                    "y": -2.117975518220387,
+                    "z": 0.4778909875423203
+                },
+                "output": -16.432811148235288
+            },
+            {
+                "input": {
+                    "x": -3.885578020161125,
+                    "y": -8.028768791241417,
+                    "z": 6.438150847891389
+                },
+                "output": -75.04246992218384
+            },
+            {
+                "input": {
+                    "x": -6.297062519091958,
+                    "y": -4.411674905170651,
+                    "z": -4.883312593689331
+                },
+                "output": -12.694175261301831
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "algebraic",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\n| LaTeX Expression | Python Code |\n|---|---|\n| `-` | `-` |\n| `${x}^{n}` | `x**n` |\n| `${y}^{2}` | `y**2` |\n| `y` | `y` |\n| `z` | `z` |\n\n**PYTHON RULES**\n\n- The function takes three arguments: `x`, `y`, and `z`.\n- The function subtracts `x` from `y**2`, then adds `y` and subtracts `z`.\n- The output of the function is a single number.\n\n**Function Definition**\n\n```python\ndef _lambdifygenerated(x, y, z):\n    return -x - y**2 + y - z\n```"
+    },
+    {
+        "task_id": "10",
+        "sympy_exp": "(-sin(y) + cos(y))*cos(z)",
+        "latex_exp": "\\left(- \\sin{\\left(y \\right)} + \\cos{\\left(y \\right)}\\right) \\cos{\\left(z \\right)}",
+        "solution": "from numpy import sin\nfrom numpy import cos\ndef _lambdifygenerated(x, y, z):\n    return (-sin(y) + cos(y))*cos(z)",
+        "simplified_solution": "sqrt(2)*cos(z)*cos(y + pi/4)",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": -9.729159239846318,
+                    "y": 0.5664112592742825,
+                    "z": 2.1106147219429143
+                },
+                "output": -0.15790753845629502
+            },
+            {
+                "input": {
+                    "x": 4.122161233385075,
+                    "y": 0.7259612902452564,
+                    "z": -0.4529048245684901
+                },
+                "output": 0.07553735237298763
+            },
+            {
+                "input": {
+                    "x": 8.185966922296558,
+                    "y": -0.417979886985971,
+                    "z": -4.278105410499355
+                },
+                "output": -0.5553307076876098
+            },
+            {
+                "input": {
+                    "x": -8.710698735882898,
+                    "y": 0.7148288639907883,
+                    "z": -3.4238225915646208
+                },
+                "output": -0.09577211242423637
+            },
+            {
+                "input": {
+                    "x": 4.022647822280829,
+                    "y": -0.6284032267027526,
+                    "z": 7.167811128331312
+                },
+                "output": 0.8849964946629167
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "trigonometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe input latex expression is:\n$\\\\left(- \\\\sin{\\\\left(y \\\\right)} + \\\\cos{\\\\left(y \\\\right)}\\\\right) \\\\cos{\\\\left(z \\\\right)}$\n\nThe equivalent python code is:\n```python\ndef _lambdifygenerated(x, y, z):\n    return (-sin(y) + cos(y))*cos(z)\n```\n\n**PYTHON RULES**\n\n- The function takes three arguments: x, y, and z.\n- The function uses the numpy.sin() and numpy.cos() functions to calculate the sine and cosine of y and z, respectively.\n- The function returns the result of the calculation, which is a float.\n\n**LATEX EXPRESSION**\n\nThe latex expression takes the following form:\n\n$\\\\left(a \\\\pm b\\\\right) \\\\pm c$\n\nWhere:\n\n- a is a mathematical expression\n- b is a mathematical expression\n- c is a mathematical expression\n\n**FUNCTION**\n\nThe function takes the following arguments:\n\n- x: The first mathematical expression\n- y: The second mathematical expression\n- z: The third mathematical expression\n\n**CALCULATION**\n\nThe calculation is done as follows:\n\n1. The sine of y is calculated using the numpy.sin() function.\n2. The cosine of y is calculated using the numpy.cos() function.\n3. The cosine of z is calculated using the numpy.cos() function.\n4. The result of the first two steps is multiplied by the result of the third step.\n5. The result of the previous step is returned.\n\n**OUTPUT**\n\nThe output of the function is a float."
+    },
+    {
+        "task_id": "9",
+        "sympy_exp": "13*x0 + 8*x1 + 7*x2 + 16*x3",
+        "latex_exp": "13 x_{0} + 8 x_{1} + 7 x_{2} + 16 x_{3}",
+        "solution": "def _lambdifygenerated(x0, x1, x2, x3):\n    return 13*x0 + 8*x1 + 7*x2 + 16*x3",
+        "simplified_solution": "13*x0 + 8*x1 + 7*x2 + 16*x3",
+        "synthetic": true,
+        "domain": "Mathematics_Summation",
+        "coefficients": [
+            13,
+            8,
+            7,
+            16
+        ],
+        "test_cases": [
+            {
+                "input": {
+                    "x0": 4,
+                    "x1": 4,
+                    "x2": -9,
+                    "x3": 9
+                },
+                "output": 165
+            },
+            {
+                "input": {
+                    "x0": 5,
+                    "x1": -6,
+                    "x2": -7,
+                    "x3": 8
+                },
+                "output": 96
+            },
+            {
+                "input": {
+                    "x0": 3,
+                    "x1": -4,
+                    "x2": 9,
+                    "x3": -8
+                },
+                "output": -58
+            },
+            {
+                "input": {
+                    "x0": 8,
+                    "x1": 10,
+                    "x2": 3,
+                    "x3": -8
+                },
+                "output": 77
+            },
+            {
+                "input": {
+                    "x0": 6,
+                    "x1": 6,
+                    "x2": 6,
+                    "x3": -5
+                },
+                "output": 88
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "summation",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe LaTeX expression is mapped to Python as follows:\n\n- `x_i` maps to `x[i]`, where `i` is a zero-based index.\n\n**PYTHON RULES**\n\n- The function takes four arguments: `x0`, `x1`, `x2`, and `x3`.\n- The function returns the value of the LaTeX expression.\n- The calculation is done using Python's addition and multiplication operators.\n\n**OUTPUT OF THE FUNCTION**\n\nThe function returns a float representing the value of the LaTeX expression."
+    },
+    {
+        "task_id": "2",
+        "sympy_exp": "sin(z)*tan(z)**2",
+        "latex_exp": "\\sin{\\left(z \\right)} \\tan^{2}{\\left(z \\right)}",
+        "solution": "from numpy import sin\nfrom numpy import tan\ndef _lambdifygenerated(x, y, z):\n    return sin(z)*tan(z)**2",
+        "simplified_solution": "sin(z)*tan(z)**2",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": 1.7960261723980473,
+                    "y": -0.7621320414565382,
+                    "z": -6.179622416047142
+                },
+                "output": 0.0011167320442456816
+            },
+            {
+                "input": {
+                    "x": 8.766352214269496,
+                    "y": 0.15624902544253239,
+                    "z": -0.4845688677947422
+                },
+                "output": -0.1290948760696428
+            },
+            {
+                "input": {
+                    "x": -7.006288219379979,
+                    "y": 0.16799944869368844,
+                    "z": -5.983292047764033
+                },
+                "output": 0.028246879479521387
+            },
+            {
+                "input": {
+                    "x": -1.8476032933052995,
+                    "y": -0.950277968140629,
+                    "z": 1.901440315443086
+                },
+                "output": 8.027999302878845
+            },
+            {
+                "input": {
+                    "x": 2.8588068778668667,
+                    "y": -0.7375817242949472,
+                    "z": 1.0844402667293807
+                },
+                "output": 3.162474603472004
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "trigonometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe LaTeX expression is mapped to the Python function using the following rules:\n\n- The `sin` function in LaTeX maps to the `sin` function in Python.\n- The `tan` function in LaTeX maps to the `tan` function in Python.\n- The superscript in LaTeX (e.g., `tan^2`) maps to the power operator (`**`) in Python.\n- The `\\\\left(`, `\\\\right)` in LaTeX maps to the `(` and `)` in Python.\n\n**PYTHON RULES**\n\nThe Python function takes the following arguments:\n\n- `z`: The input variable.\n\nThe function calculates the value of the LaTeX expression as follows:\n\n1. Calculate the value of `sin(z)`.\n2. Calculate the value of `tan(z)`.\n3. Raise the value of `tan(z)` to the power of 2.\n4. Multiply the value of `sin(z)` by the value of `tan(z)**2`.\n\nThe output of the function is the value of the LaTeX expression."
+    },
+    {
+        "task_id": "7",
+        "sympy_exp": "12*x0 + 15*x1",
+        "latex_exp": "12 x_{0} + 15 x_{1}",
+        "solution": "def _lambdifygenerated(x0, x1):\n    return 12*x0 + 15*x1",
+        "simplified_solution": "12*x0 + 15*x1",
+        "synthetic": true,
+        "domain": "Mathematics_Summation",
+        "coefficients": [
+            12,
+            15
+        ],
+        "test_cases": [
+            {
+                "input": {
+                    "x0": 6,
+                    "x1": 0
+                },
+                "output": 72
+            },
+            {
+                "input": {
+                    "x0": 4,
+                    "x1": 8
+                },
+                "output": 168
+            },
+            {
+                "input": {
+                    "x0": -6,
+                    "x1": 8
+                },
+                "output": 48
+            },
+            {
+                "input": {
+                    "x0": 8,
+                    "x1": -7
+                },
+                "output": -9
+            },
+            {
+                "input": {
+                    "x0": -7,
+                    "x1": -9
+                },
+                "output": -219
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "summation",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING:**\n- Replace \"x_{0}\" with the variable name \"x0\" and \"x_{1}\" with the variable name \"x1\".\n\n**PYTHON RULES:**\n- The function should be defined as \"def _lambdifygenerated(x0, x1):\".\n- The function should return the result of the mathematical expression.\n- The multiplication operator in Python is \"*\".\n- The addition operator in Python is \"+\".\n\n**LATEX EXPRESSION:**\n- The latex expression is \"12 x_{0} + 15 x_{1}\".\n\n**ARGUMENTS:**\n- The function takes two arguments, \"x0\" and \"x1\".\n\n**CALCULATION:**\n- The calculation is done by multiplying \"x0\" by 12 and \"x1\" by 15, and then adding the results together.\n\n**OUTPUT:**\n- The function returns the result of the calculation, which is a numerical value."
+    },
+    {
+        "task_id": "3",
+        "sympy_exp": "1.33333333333333*pi*r**3 + 4*pi*r**2",
+        "latex_exp": "1.33333333333333 \\pi r^{3} + 4 \\pi r^{2}",
+        "solution": "import numpy as np\ndef _lambdifygenerated(r):\n    return 1.33333333333333*np.pi*r**3 + 4*np.pi*r**2",
+        "simplified_solution": "pi*r**2*(1.33333333333333*r + 4)",
+        "synthetic": true,
+        "domain": "Mathematics_Geometry",
+        "test_cases": [
+            {
+                "input": {
+                    "r": 7.225625965899943
+                },
+                "output": 2236.296919121776
+            },
+            {
+                "input": {
+                    "r": 9.987697675697603
+                },
+                "output": 5426.896711163619
+            },
+            {
+                "input": {
+                    "r": 7.578039241425189
+                },
+                "output": 2544.5294564896167
+            },
+            {
+                "input": {
+                    "r": 2.3607111545420345
+                },
+                "output": 125.14016427502841
+            },
+            {
+                "input": {
+                    "r": 9.995351546507049
+                },
+                "output": 5438.420549968501
+            }
+        ],
+        "complexity": "3",
+        "equation_type": "geometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe LaTeX expression is converted to a Python function using the `sympy` library. The `sympy` function `lambdify` is used to convert the expression to a Python function.\n\n**Explain how the input maps to the latex expression.**\n\nThe input to the function is a single variable, `r`. The LaTeX expression takes the variable `r` and raises it to the power of 3, multiplies it by 1.33333333333333, and adds it to 4 times the variable `r` raised to the power of 2.\n\n**PYTHON RULES**\n\nThe Python function takes a single argument, `r`. The function first multiplies 1.33333333333333 by the value of `r` cubed. Then, the function multiplies 4 by the value of `r` squared. Finally, the function adds the two values together and returns the result.\n\n**State the latex expression function takes.**\n\nThe LaTeX expression takes a single variable, `r`.\n\n**State the arguments the function takes.**\n\nThe Python function takes a single argument, `r`.\n\n**State how the calculation is done. Which python functions and operators were used and in what order.**\n\nThe function first multiplies 1.33333333333333 by the value of `r` cubed. Then, the function multiplies 4 by the value of `r` squared. Finally, the function adds the two values together and returns the result.\n\n**State the output of the function**\n\nThe output of the function is a single value, which is the result of the calculation."
+    },
+    {
+        "task_id": "10",
+        "sympy_exp": "17*x0 + 18*x1 + 15*x2 + 2*x3 + 5*x4 + 9*x5 + 20*x6 + 12*x7 + 18*x8",
+        "latex_exp": "17 x_{0} + 18 x_{1} + 15 x_{2} + 2 x_{3} + 5 x_{4} + 9 x_{5} + 20 x_{6} + 12 x_{7} + 18 x_{8}",
+        "solution": "def _lambdifygenerated(x0, x1, x2, x3, x4, x5, x6, x7, x8):\n    return 17*x0 + 18*x1 + 15*x2 + 2*x3 + 5*x4 + 9*x5 + 20*x6 + 12*x7 + 18*x8",
+        "simplified_solution": "17*x0 + 18*x1 + 15*x2 + 2*x3 + 5*x4 + 9*x5 + 20*x6 + 12*x7 + 18*x8",
+        "synthetic": true,
+        "domain": "Mathematics_Summation",
+        "coefficients": [
+            17,
+            18,
+            15,
+            2,
+            5,
+            9,
+            20,
+            12,
+            18
+        ],
+        "test_cases": [
+            {
+                "input": {
+                    "x0": -2,
+                    "x1": 2,
+                    "x2": -7,
+                    "x3": 10,
+                    "x4": 9,
+                    "x5": -7,
+                    "x6": 7,
+                    "x7": -1,
+                    "x8": 9
+                },
+                "output": 189
+            },
+            {
+                "input": {
+                    "x0": -10,
+                    "x1": -4,
+                    "x2": 6,
+                    "x3": 1,
+                    "x4": -5,
+                    "x5": -4,
+                    "x6": -2,
+                    "x7": -3,
+                    "x8": -1
+                },
+                "output": -305
+            },
+            {
+                "input": {
+                    "x0": 1,
+                    "x1": 4,
+                    "x2": 5,
+                    "x3": 3,
+                    "x4": -10,
+                    "x5": 3,
+                    "x6": 1,
+                    "x7": -3,
+                    "x8": -4
+                },
+                "output": 59
+            },
+            {
+                "input": {
+                    "x0": 4,
+                    "x1": 9,
+                    "x2": 4,
+                    "x3": -2,
+                    "x4": 6,
+                    "x5": 1,
+                    "x6": 1,
+                    "x7": -6,
+                    "x8": 5
+                },
+                "output": 363
+            },
+            {
+                "input": {
+                    "x0": -7,
+                    "x1": -2,
+                    "x2": -6,
+                    "x3": 10,
+                    "x4": 10,
+                    "x5": -4,
+                    "x6": -9,
+                    "x7": 1,
+                    "x8": -9
+                },
+                "output": -541
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "summation",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe input latex expression is \"17 x_{0} + 18 x_{1} + 15 x_{2} + 2 x_{3} + 5 x_{4} + 9 x_{5} + 20 x_{6} + 12 x_{7} + 18 x_{8}\". This expression represents a linear combination of nine variables, x0 through x8.\n\nThe output python function is \"_lambdifygenerated\". It takes nine arguments, corresponding to the nine variables in the latex expression. The function returns the value of the linear combination for the given values of the variables.\n\n**PYTHON RULES**\n\nThe python function is defined using the \"def\" keyword, followed by the function name and the list of arguments. The function body is indented, and the \"return\" statement is used to return the value of the function.\n\nThe function uses the \"*\" operator to multiply each variable by its coefficient. The \"+\" operator is used to add the products together.\n\n**OUTPUT**\n\nThe output of the function is a single number, representing the value of the linear combination for the given values of the variables."
+    },
+    {
+        "task_id": "1",
+        "sympy_exp": "14*x0 + 10*x1 + 17*x2 + 15*x3 + x4 + 13*x5 + 20*x6",
+        "latex_exp": "14 x_{0} + 10 x_{1} + 17 x_{2} + 15 x_{3} + x_{4} + 13 x_{5} + 20 x_{6}",
+        "solution": "def _lambdifygenerated(x0, x1, x2, x3, x4, x5, x6):\n    return 14*x0 + 10*x1 + 17*x2 + 15*x3 + 1*x4 + 13*x5 + 20*x6",
+        "simplified_solution": "14*x0 + 10*x1 + 17*x2 + 15*x3 + x4 + 13*x5 + 20*x6",
+        "synthetic": true,
+        "domain": "Mathematics_Summation",
+        "coefficients": [
+            14,
+            10,
+            17,
+            15,
+            1,
+            13,
+            20
+        ],
+        "test_cases": [
+            {
+                "input": {
+                    "x0": -9,
+                    "x1": -5,
+                    "x2": -9,
+                    "x3": 9,
+                    "x4": -2,
+                    "x5": 3,
+                    "x6": 9
+                },
+                "output": 23
+            },
+            {
+                "input": {
+                    "x0": 3,
+                    "x1": -2,
+                    "x2": -7,
+                    "x3": 10,
+                    "x4": 4,
+                    "x5": -1,
+                    "x6": 5
+                },
+                "output": 144
+            },
+            {
+                "input": {
+                    "x0": 8,
+                    "x1": 7,
+                    "x2": -7,
+                    "x3": 9,
+                    "x4": 2,
+                    "x5": 8,
+                    "x6": 9
+                },
+                "output": 484
+            },
+            {
+                "input": {
+                    "x0": 10,
+                    "x1": 8,
+                    "x2": 4,
+                    "x3": -5,
+                    "x4": 7,
+                    "x5": 4,
+                    "x6": 6
+                },
+                "output": 392
+            },
+            {
+                "input": {
+                    "x0": 1,
+                    "x1": 4,
+                    "x2": -5,
+                    "x3": -2,
+                    "x4": 3,
+                    "x5": 2,
+                    "x6": -5
+                },
+                "output": -132
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "summation",
+        "output_type": "real",
+        "description": "- LATEX TO PYTHON MAPPING.\nThe latex expression is mapped to a python function using the Sympy library. The Sympy library provides a function called lambdify that takes a sympy expression and a list of variables and returns a python function that evaluates the expression for the given values of the variables.\n- Explain how the input maps to the latex expression.\nThe input to the python function is a list of values for the variables x0, x1, x2, x3, x4, x5, and x6. The values in the list are in the same order as the variables in the latex expression.\n- PYTHON RULES.\n- State the latex expression function takes.\nThe latex expression is a linear combination of 7 variables.\n- State the arguments the function takes.\nThe function takes 7 arguments, which are the values of the variables x0, x1, x2, x3, x4, x5, and x6.\n- State how the calculation is done. Which python functions and operators were used and in what order.\nThe calculation is done using the Sympy library. The Sympy library provides a function called lambdify that takes a sympy expression and a list of variables and returns a python function that evaluates the expression for the given values of the variables.\n- State the output of the function\nThe output of the function is the value of the latex expression for the given values of the variables."
+    },
+    {
+        "task_id": "1",
+        "sympy_exp": "18*x + 20*y - 75",
+        "latex_exp": "18 x + 20 y - 75 = 0",
+        "solution": "def _lambdifygenerated(x, y):\n    return 18*x + 20*y - 75",
+        "simplified_solution": "18*x + 20*y - 75",
+        "synthetic": true,
+        "domain": "Mathematics_Diophantine",
+        "coefficients": {
+            "a": 18,
+            "b": 20,
+            "c": 75
+        },
+        "test_cases": [
+            {
+                "input": {
+                    "x": -10,
+                    "y": 1
+                },
+                "output": -235
+            },
+            {
+                "input": {
+                    "x": 5,
+                    "y": 4
+                },
+                "output": 95
+            },
+            {
+                "input": {
+                    "x": 5,
+                    "y": -5
+                },
+                "output": -85
+            },
+            {
+                "input": {
+                    "x": -2,
+                    "y": 4
+                },
+                "output": -31
+            },
+            {
+                "input": {
+                    "x": -1,
+                    "y": -7
+                },
+                "output": -233
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "linear_diophantine",
+        "output_type": "integer",
+        "description": "**LATEX TO PYTHON MAPPING**\n\n- The latex expression is mapped as follows:\n - The `=` symbol is removed from the expression.\n - The variable names are converted to lowercase letters.\n - The expression is converted to python code using the `sympy.lambdify()`.\n\n**PYTHON RULES**\n\n- The function takes two arguments, `x` and `y`.\n- The function returns the value of the latex expression.\n- The calculation is done in python by using `x` and `y` and the operators `+`, `*`, and `-` in the order specified in the latex expression.\n\n**OUTPUT**\n\n- The function returns a *float* representing the result of the calculation."
+    },
+    {
+        "task_id": "6",
+        "sympy_exp": "y*(x + z) + y",
+        "latex_exp": "y \\left(x + z\\right) + y",
+        "solution": "def _lambdifygenerated(x, y, z):\n    return y*(x + z) + y",
+        "simplified_solution": "y*(x + z + 1)",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": -2.9424138870053262,
+                    "y": -2.2414892873051917,
+                    "z": -3.177000092234117
+                },
+                "output": 11.475111591745655
+            },
+            {
+                "input": {
+                    "x": 4.250962236751324,
+                    "y": -8.10131785369583,
+                    "z": -2.292145665726113
+                },
+                "output": -23.97031351265762
+            },
+            {
+                "input": {
+                    "x": 6.563743184946919,
+                    "y": 7.309839648611355,
+                    "z": -9.606339718921248
+                },
+                "output": -14.931053130161683
+            },
+            {
+                "input": {
+                    "x": 5.350658660380931,
+                    "y": -4.929156220064508,
+                    "z": 7.8309800908917
+                },
+                "output": -69.90351286154335
+            },
+            {
+                "input": {
+                    "x": -3.480952817440488,
+                    "y": 6.858142857717308,
+                    "z": 7.192279657013376
+                },
+                "output": 32.31095251518866
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "algebraic",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\n**Input:**\ny*(x + z) + y\n\n**Output:**\ndef _lambdifygenerated(x, y, z):\n    return y*(x + z) + y\n\n**PYTHON RULES**\n\n**Function:**\n_lambdifygenerated\n\n**Arguments:**\n- x: numerical value\n- y: numerical value\n- z: numerical value\n\n**Calculation:**\n1. Add x and z: (x + z)\n2. Multiply y by the sum of x and z: y * (x + z)\n3. Add y to the product of y and the sum of x and z: y * (x + z) + y\n\n**Output:**\nThe sum of multiplying y with the sum of x and z and then adding y to the product."
+    },
+    {
+        "task_id": "4",
+        "sympy_exp": "5*x + 7*y - 12",
+        "latex_exp": "5 x + 7 y - 12 = 0",
+        "solution": "def _lambdifygenerated(x, y):\n    return 5*x + 7*y - 12",
+        "simplified_solution": "5*x + 7*y - 12",
+        "synthetic": true,
+        "domain": "Mathematics_Diophantine",
+        "coefficients": {
+            "a": 5,
+            "b": 7,
+            "c": 12
+        },
+        "test_cases": [
+            {
+                "input": {
+                    "x": 1,
+                    "y": -5
+                },
+                "output": -42
+            },
+            {
+                "input": {
+                    "x": -9,
+                    "y": -1
+                },
+                "output": -64
+            },
+            {
+                "input": {
+                    "x": -7,
+                    "y": 4
+                },
+                "output": -19
+            },
+            {
+                "input": {
+                    "x": -10,
+                    "y": 5
+                },
+                "output": -27
+            },
+            {
+                "input": {
+                    "x": -2,
+                    "y": 7
+                },
+                "output": 27
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "linear_diophantine",
+        "output_type": "integer",
+        "description": "- **LATEX TO PYTHON MAPPING**: \nThe input latex expression \"5 x + 7 y - 12 = 0\" can be mapped to a Python function in the following way:\n- **PYTHON RULES**:\n - The function takes two arguments, x and y, and returns the value of the expression \"5 x + 7 y - 12\".\n - The calculation is done using the Python operators +, *, and -.\n - The output of the function is a single number.\n- **PYTHON IMPLEMENTATION**:\n```python\ndef _lambdifygenerated(x, y):\n    return 5*x + 7*y - 12\n```"
+    },
+    {
+        "task_id": "3",
+        "sympy_exp": "tan(x) + atan(z)",
+        "latex_exp": "\\tan{\\left(x \\right)} + \\operatorname{atan}{\\left(z \\right)}",
+        "solution": "from numpy import tan\nfrom numpy import arctan\ndef _lambdifygenerated(x, y, z):\n    return tan(x) + arctan(z)",
+        "simplified_solution": "tan(x) + atan(z)",
+        "synthetic": true,
+        "domain": "Mathematics_Algebra",
+        "test_cases": [
+            {
+                "input": {
+                    "x": -8.475991658395222,
+                    "y": -0.4829284761553847,
+                    "z": -5.67170349582989
+                },
+                "output": -0.0014745021765645294
+            },
+            {
+                "input": {
+                    "x": -2.50985358603653,
+                    "y": 0.023690909317846343,
+                    "z": 5.250871145801542
+                },
+                "output": 2.114387000094118
+            },
+            {
+                "input": {
+                    "x": -6.357020990222395,
+                    "y": 0.3453477082503873,
+                    "z": 6.758612086124604
+                },
+                "output": 1.3499325451832516
+            },
+            {
+                "input": {
+                    "x": -7.019040108441301,
+                    "y": 0.052349926436522365,
+                    "z": -5.424306339364707
+                },
+                "output": -2.294004896357001
+            },
+            {
+                "input": {
+                    "x": 8.414440241103044,
+                    "y": -0.8584405878626695,
+                    "z": 5.243791969665333
+                },
+                "output": -0.2110433219233563
+            }
+        ],
+        "complexity": "2",
+        "equation_type": "trigonometric",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\nThe provided LATEX expression is mapped to a Python function, with the intention of evaluating the mathematical function represented by the LATEX expression.\n\n**PYTHON RULES**\n- The function should take two arguments: `x` and `z`.\n- The function will return `numpy.tan(x) + numpy.arctan(z)`, which is the mathematical formula represented by the LATEX expression.\n\n**LATEX EXPRESSION**\n`\\tan{\\\\left(x \\\\right)} + \\\\operatorname{atan}{\\\\left(z \\\\right)}`\n\n**ARGUMENTS**\nThe function takes two arguments:\n- `x`: The value of the angle in radians for which the tangent should be calculated\n- `z`: The value of the angle in radians for which the arctangent should be calculated\n\n**CALCULATION**\nThe function calculates the tangent of `x` using `numpy.tan` and the arctangent of `z` using `numpy.arctan`. The results of these operations are added together to produce the output of the function.\n\n**OUTPUT**\nThe function returns a single value, which is the sum of the tangent of `x` and the arctangent of `z`. The output will be a float representing the result of the mathematical operation."
+    },
+    {
+        "task_id": "10",
+        "sympy_exp": "4*x + 20*y - 61",
+        "latex_exp": "4 x + 20 y - 61 = 0",
+        "solution": "def _lambdifygenerated(x, y):\n    return 4*x + 20*y - 61",
+        "simplified_solution": "4*x + 20*y - 61",
+        "synthetic": true,
+        "domain": "Mathematics_Diophantine",
+        "coefficients": {
+            "a": 4,
+            "b": 20,
+            "c": 61
+        },
+        "test_cases": [
+            {
+                "input": {
+                    "x": -8,
+                    "y": 0
+                },
+                "output": -93
+            },
+            {
+                "input": {
+                    "x": 0,
+                    "y": -6
+                },
+                "output": -181
+            },
+            {
+                "input": {
+                    "x": 4,
+                    "y": -8
+                },
+                "output": -205
+            },
+            {
+                "input": {
+                    "x": -1,
+                    "y": 3
+                },
+                "output": -5
+            },
+            {
+                "input": {
+                    "x": 8,
+                    "y": -10
+                },
+                "output": -229
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "linear_diophantine",
+        "output_type": "integer",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe latex expression is mapped to a Python function using the following rules:\n\n- Variables in the latex expression are mapped to corresponding variables in the Python function.\n- Operators in the latex expression are mapped to corresponding operators in the Python function.\n- Constants in the latex expression are mapped to corresponding constants in the Python function.\n\n**PYTHON RULES**\n\n- The Python function takes two arguments: `x` and `y`.\n- The function calculates the value of the latex expression by performing the following operations:\n  - Multiply `x` by 4.\n  - Multiply `y` by 20.\n  - Subtract 61 from the result of the previous two steps.\n- The function returns the result of the calculation.\n\n**OUTPUT**\n\nThe output of the function is the value of the latex expression."
+    },
+    {
+        "task_id": "3",
+        "sympy_exp": "13*x0 + 14*x1 + 9*x2 + 11*x3 + 2*x4 + 4*x5 + 6*x6 + 18*x7 + 20*x8 + 3*x9",
+        "latex_exp": "13 x_{0} + 14 x_{1} + 9 x_{2} + 11 x_{3} + 2 x_{4} + 4 x_{5} + 6 x_{6} + 18 x_{7} + 20 x_{8} + 3 x_{9}",
+        "solution": "def _lambdifygenerated(x0, x1, x2, x3, x4, x5, x6, x7, x8, x9):\n    return 13*x0 + 14*x1 + 9*x2 + 11*x3 + 2*x4 + 4*x5 + 6*x6 + 18*x7 + 20*x8 + 3*x9",
+        "simplified_solution": "13*x0 + 14*x1 + 9*x2 + 11*x3 + 2*x4 + 4*x5 + 6*x6 + 18*x7 + 20*x8 + 3*x9",
+        "synthetic": true,
+        "domain": "Mathematics_Summation",
+        "coefficients": [
+            13,
+            14,
+            9,
+            11,
+            2,
+            4,
+            6,
+            18,
+            20,
+            3
+        ],
+        "test_cases": [
+            {
+                "input": {
+                    "x0": 10,
+                    "x1": 7,
+                    "x2": -8,
+                    "x3": 7,
+                    "x4": 7,
+                    "x5": 1,
+                    "x6": 9,
+                    "x7": -6,
+                    "x8": -10,
+                    "x9": 10
+                },
+                "output": 27
+            },
+            {
+                "input": {
+                    "x0": 9,
+                    "x1": -10,
+                    "x2": -10,
+                    "x3": 1,
+                    "x4": 8,
+                    "x5": 5,
+                    "x6": -4,
+                    "x7": -3,
+                    "x8": 5,
+                    "x9": -6
+                },
+                "output": -62
+            },
+            {
+                "input": {
+                    "x0": 1,
+                    "x1": 5,
+                    "x2": -2,
+                    "x3": -4,
+                    "x4": 9,
+                    "x5": -3,
+                    "x6": 4,
+                    "x7": 7,
+                    "x8": 4,
+                    "x9": -10
+                },
+                "output": 227
+            },
+            {
+                "input": {
+                    "x0": -8,
+                    "x1": -4,
+                    "x2": 5,
+                    "x3": -3,
+                    "x4": -7,
+                    "x5": 6,
+                    "x6": 1,
+                    "x7": 4,
+                    "x8": 5,
+                    "x9": 3
+                },
+                "output": 49
+            },
+            {
+                "input": {
+                    "x0": 7,
+                    "x1": -9,
+                    "x2": 6,
+                    "x3": 9,
+                    "x4": -6,
+                    "x5": 10,
+                    "x6": 0,
+                    "x7": 7,
+                    "x8": -5,
+                    "x9": 8
+                },
+                "output": 196
+            }
+        ],
+        "complexity": "1",
+        "equation_type": "summation",
+        "output_type": "real",
+        "description": "**LATEX TO PYTHON MAPPING**\n\nThe LaTeX expression is mapped to a Python function using the following rules:\n\n- Each variable in the LaTeX expression is represented by a corresponding argument in the Python function.\n- The coefficients in the LaTeX expression are represented by the corresponding values in the Python function.\n- The mathematical operations in the LaTeX expression are represented by the corresponding Python operators.\n\n**PYTHON RULES**\n\nThe Python function takes the following arguments:\n\n- `x0`, `x1`, `x2`, `x3`, `x4`, `x5`, `x6`, `x7`, `x8`, `x9`: The values of the variables in the LaTeX expression.\n\nThe function calculates the value of the LaTeX expression by:\n\n1. Multiplying each variable by its corresponding coefficient.\n2. Adding the results of the multiplications.\n\nThe output of the function is the value of the LaTeX expression."
+    }
+]
